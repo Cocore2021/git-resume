@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark">
+        <div class="container">
+            <h1 class="text-center text-light p-3">Git et GitHub</h1>
+        </div>
+    </header>
+
+    <!-- Les bases -->
+    <section>
+        <div class="container">
+            <h2 class="text-center text-success p-3 text-underline"><u>Les commandes de base</u></h2>
+            <ul>
+                <li> <strong>git init</strong> crée un nouveau dépôt Git.</li>
+                <li> <strong>git status</strong>  inspecte le contenu du répertoire de travail et de la zone de transit.  </li>
+                <li> <strong>git add filename</strong> ajoute des fichiers du répertoire de travail à la zone de transit.</li>
+                <li> <strong>git add -A</strong> ajoute tous les fichiers du répertoire de travail et sous-dossiers à la zone de transit.</li>
+                <li> <strong>git add .</strong> ajoute tous les fichiers du répertoire de travail à la zone de transit.</li>
+                <li> <strong>git diff </strong> montre la différence entre le répertoire de travail et la zone de transit.</li>
+                <li> <strong>git commit</strong> stocke définitivement les changements de fichiers de la zone dans la base de données locale.</li>
+                <li> <strong>git log</strong> montre une liste de tous les commits précédents.</li>
+            </ul>
+            <h2 class="text-center text-success p-3 text-underline"><u>Comment revenir sur ses pas?</u></h2>
+            <ul>
+                <li><strong>HEAD</strong> représente le commit le plus récent.</li>
+                <li> <strong>git show HEAD</strong> montre le commit le plus récent?</li>
+                <li><strong>git checkout HEAD filename</strong> supprime les changements dans le répertoire de travail.</li>
+                <li><strong>git reset HEAD filename</strong> annule les changements de fichiers dans la zone de transit.</li>
+                <li><strong>git reset commit_SHA</strong> permet de revenir à un commit précédent dans votre historique de commit.</li>
+            </ul>
+            
+
+        </div>
+    </section>
+
+
+      <!-- Optional JavaScript -->
+      <script src="jquery.js"></script>
+      <script src="bootstrap.min.js"></script>
+</body>
+</html>
