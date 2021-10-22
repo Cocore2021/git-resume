@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="git.html">Git</a>
+                <a class="nav-item nav-link" href="#">Bootstrap</a>
+                <a class="nav-item nav-link" href="jquery.html">JQuery</a>
+                <a class="nav-item nav-link disabled" href="#"></a>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <!-- Les bases -->
+    <section>
+        <div class="container">
+            <h2 class="text-center text-success p-3 text-underline"><u>Les commandes de base</u></h2>
+            <ul>
+                <li> <strong>git init</strong> crée un nouveau dépôt Git.</li>
+                <li> <strong>git status</strong>  inspecte le contenu du répertoire de travail et de la zone de transit.  </li>
+                <li> <strong>git add filename</strong> ajoute des fichiers du répertoire de travail à la zone de transit.</li>
+                <li> <strong>git add -A</strong> ajoute tous les fichiers du répertoire de travail et sous-dossiers à la zone de transit.</li>
+                <li> <strong>git add .</strong> ajoute tous les fichiers du répertoire de travail à la zone de transit.</li>
+                <li> <strong>git diff </strong> montre la différence entre le répertoire de travail et la zone de transit.</li>
+                <li> <strong>git commit</strong> stocke définitivement les changements de fichiers de la zone dans la base de données locale.</li>
+                <li> <strong>git log</strong> montre une liste de tous les commits précédents.</li>
+            </ul>
+
+
+            <h2 class="text-center text-success p-3 text-underline"><u>Comment revenir sur ses pas?</u></h2>
+            <ul>
+                <li><strong>HEAD</strong> représente le commit le plus récent.</li>
+                <li> <strong>git show HEAD</strong> montre le commit le plus récent?</li>
+                <li><strong>git checkout HEAD filename</strong> supprime les changements dans le répertoire de travail.</li>
+                <li><strong>git reset HEAD filename</strong> annule les changements de fichiers dans la zone de transit.</li>
+                <li><strong>git reset commit_SHA</strong> permet de revenir à un commit précédent dans votre historique de commit.</li>
+            </ul>
+
+            <h2 class="text-center text-success p-3 text-underline"><u>Envoyer son dossier sur Githup</u> </h2>
+            <ul>
+                <li><strong>git remote add origin</strong> + adresse du dépot.</li>
+                <li><strong>git branch -M main</strong></li>
+                <li><strong>git push -u origin main</strong></li>
+            </ul>
+            <h2 class="text-center text-success p-3 text-underline"><u>Git Branching</u> </h2>
+            <ul>
+                <li><strong>git branch</strong> liste toutes les branches d'un projet Git et nous indique sur quelle branche on se trouve.</li>
+                <li><strong>git branch new_branch_name</strong> crée une nouvelle branche.</li>
+                <li><strong>git checkout branch_name</strong> permet de passer d'une branche à une autre.</li>
+                <li><strong>git merge branch_name</strong> permet d'inclure tous les changements dans une branche vers la branche master.</li>
+                <li><strong>git branch -d branch_name</strong> efface les branches demandées après un git merge.</li>
+                <li><strong>git branch -D branch_name</strong> efface les branches demandées même si elle n'ont pas été mergées avec la branche main.</li>
+            </ul>
+            <h2 class="text-center text-success p-3 text-underline"><u>Git Teamwork</u> </h2>
+            <ul>
+                <li><strong>Remote</strong> c'est une dépôt qui permet à plusieurs collaborateurs de travailler ensemble sur un même projet git. </li>
+                <li><strong>git clone remote_location clone_name</strong> permet de créer une copie locale d'un dépot.
+                    <ul>
+                        <li><strong>remote_location</strong> dit à git où trouver le dépôt.</li>
+                        <li><strong>clone_name</strong> est le nom que l'on donne au fichier dans lequel Git va cloner le dépot.</li>
+                    </ul>
+                </li>
+                <li><strong>git remote -v</strong> liste les remotes d'un projet.</li>
+                <li><strong>git fetch</strong> récupère le travail de la copie distante dans la copie locale.</li>
+                <li><strong>git merge origin/master</strong> intègre les changements à notre branche master locale.</li>
+                <li><strong>git push origin your_branch_name</strong> va pousser notre branche vers le serveur distant, origin.</li>
+            </ul>
+            
+
+        </div>
+    </section>
+
+
+      <!-- Optional JavaScript -->
+      <script src="jquery.js"></script>
+      <script src="bootstrap.min.js"></script>
+</body>
+</html>
