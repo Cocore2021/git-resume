@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header class="bg-dark">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Home</a>
@@ -18,31 +19,35 @@
               <div class="navbar-nav">
                 <a class="nav-item nav-link" href="git.html">Git</a>
                 <a class="nav-item nav-link" href="#">Bootstrap</a>
-                <a class="nav-item nav-link  active" href="jquery.html">JQuery</a>
-                <a class="nav-item nav-link" href="php.html">PHP</a>
+                <a class="nav-item nav-link " href="jquery.html">JQuery</a>
+               
+                <a class="nav-item nav-link  active" href="php.html">PHP</a>
+             
               </div>
             </div>
           </nav>
     </header>
 
-    <!-- Les bases -->
     <section>
         <div class="container">
-            <h2 class="text-center text-success p-3 text-underline"><u>Les fonctions de base</u></h2>
+            <h2 class="text-center text-success p-3 text-underline"><u>Introduction</u></h2>
             <ul>
-                <li> <strong>.ready()</strong>  attend que le DOM soit entièrement chargé, et invoque alors la fonction de rappel spécifiée.</li>
-                
+              <li><strong> &lt;?php</strong> = tag d'ouverture PHP</li> 
+              <li><strong> ?&gt;</strong> = tag de fermeture PHP, il n'est pas obligatoire.</li> 
+              <li> <strong>echo</strong>  est un mot clé pout afficher du texte. Il faut mettre le texte à afficher entre guillemets.</li>
+              <li>PHP n'est pas sensible à la casse.</li>
+              <li><strong>//</strong> ou <strong>#</strong> = commentaire.</li>
+              <li><strong>/* */</strong>  = commentaire multi-lignes.</li>
+              <li>Chaque déclaration en PHP doit être terminée par un point-virgule ;</li>
             </ul>
             <h2 class="text-center text-success p-3 text-underline"><u>Parcourir le DOM</u></h2>
             <ul>
                 <li> <strong>.children()</strong>  nous permet de sélectionner les enfants d'un élément. Cette méthode sélectionne uniquement les enfants direct.</li>
-                <li> <strong>.parent()</strong>  nous permet de sélectionner le parent d'un élément.</li>
-                <li> <strong>.siblings()</strong>  nous permet de sélectionner les éléments qui se trouvent au même niveau dans le DOM que l'élément sélectionné.</li>
-                <li> <strong>.closest()</strong>  nous permet de sélectionner l'élément le plus proche avec le sélecteur spécifié en paramètre.</li>
-                <li> <strong>.next() et .prev()</strong>  nous permettent de sélectionner l'élément sibling suivant ou précédant.</li>
-                <li> <strong>.find() </strong>  nous permet de sélectionner un élément singulier qui est le descendant d'un autre élément. Il retournera tous les descendant qui répondent au critère.</li>
+               
                 
             </ul>
+
+            
 
 
          
@@ -50,8 +55,6 @@
     </section>
 
 
-      <!-- Optional JavaScript -->
-      <script src="jquery.js"></script>
-      <script src="bootstrap.min.js"></script>
+ 
 </body>
 </html>
