@@ -40,11 +40,20 @@
               <li><strong>/* */</strong>  = commentaire multi-lignes.</li>
               <li>Chaque déclaration en PHP doit être terminée par un point-virgule ;</li>
             </ul>
-            <h2 class="text-center text-success p-3 text-underline"><u>Parcourir le DOM</u></h2>
+            <h2 class="text-center text-success p-3 text-underline"><u>Les variables</u></h2>
             <ul>
-                <li> <strong>.children()</strong>  nous permet de sélectionner les enfants d'un élément. Cette méthode sélectionne uniquement les enfants direct.</li>
+                <li>Les <strong>Strings</strong> (chaînes de caractère) sont des collections de texte que l'ordinateur traite comme un seul élément de données.</li>
                
-                
+                <li> Une chaîne peut être de n'importe quelle longueur et contenir des lettres, des chiffres, des symboles ou des espaces entourés de guillemets.</li>
+               
+                <li>Afin d'inclure certains caractères dans les chaînes de caractères, nous devons utiliser des séquences d'échappement: <strong>\</strong>.</li>
+                <li><strong>\n</strong> permet de faire un saut de ligne.</li>
+                <li>Nous pouvons utiliser l'opérateur de concaténation <strong>(.)</strong>  pour combiner deux chaînes de caractères en une seule.</li>
+                <li>On déclare une variable en utilisant le signe dollar <strong>$</strong>  suivi du nom de la variable, puis on utilise l'opérateur d'affectation <strong>=</strong> pour lui donner une valeur. ex: <code>$name = "Core";</code></li>
+                <li>PHP dispose d'une analyse syntaxique des variables qui nous permet d'inclure des variables directement dans nos chaînes de caractères. On peut aussi utiliser la syntaxe suivante: <code>${var_name}</code> pour insérer la variable dans une chaîne de caractères.</li>
+                <li>Une fois qu'une variable a été assignée, on peut changer sa valeur. C'est ce qu'on appelle la réaffectation.</li>
+                <li>Nous pouvons créer un alias pour une variable, au lieu d'une simple copie, en utilisant l'opérateur d'affectation de référence <strong>=&</strong>.</li>
+                <li>L'opérateur d'affectation concaténateur <strong>.=</strong>  est une notation abrégée permettant de réaffecter une variable de type chaîne à sa valeur actuelle, à laquelle est ajoutée une autre valeur de type chaîne. Ex: <code>$name .= " Mathieu" </code></li>
             </ul>
 
             
