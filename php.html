@@ -1,69 +1,235 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="bg-dark">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="git.html">Git</a>
-                <a class="nav-item nav-link" href="#">Bootstrap</a>
-                <a class="nav-item nav-link " href="jquery.html">JQuery</a>
-               
-                <a class="nav-item nav-link  active" href="php.html">PHP</a>
-             
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="git.html">Git</a>
+            <a class="nav-item nav-link" href="#">Bootstrap</a>
+            <a class="nav-item nav-link" href="jquery.html">JQuery</a>
+
+            <a class="nav-item nav-link active" href="php.html">PHP</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <section>
-        <div class="container">
-            <h2 class="text-center text-success p-3 text-underline"><u>Introduction</u></h2>
-            <ul>
-              <li><strong> &lt;?php</strong> = tag d'ouverture PHP</li> 
-              <li><strong> ?&gt;</strong> = tag de fermeture PHP, il n'est pas obligatoire.</li> 
-              <li> <strong>echo</strong>  est un mot clé pout afficher du texte. Il faut mettre le texte à afficher entre guillemets.</li>
-              <li>PHP n'est pas sensible à la casse.</li>
-              <li><strong>//</strong> ou <strong>#</strong> = commentaire.</li>
-              <li><strong>/* */</strong>  = commentaire multi-lignes.</li>
-              <li>Chaque déclaration en PHP doit être terminée par un point-virgule ;</li>
-            </ul>
-            <h2 class="text-center text-success p-3 text-underline"><u>Les variables</u></h2>
-            <ul>
-                <li>Les <strong>Strings</strong> (chaînes de caractère) sont des collections de texte que l'ordinateur traite comme un seul élément de données.</li>
+      <div class="container">
+        <h2 class="text-center text-success p-3 text-underline">
+          <u>Introduction</u>
+        </h2>
+        <ul>
+          <li><strong> &lt;?php</strong> = tag d'ouverture PHP</li>
+          <li>
+            <strong> ?&gt;</strong> = tag de fermeture PHP, il n'est pas
+            obligatoire.
+          </li>
+          <li>
+            <strong>echo</strong> est un mot clé pout afficher du texte. Il faut
+            mettre le texte à afficher entre guillemets.
+          </li>
+          <li>PHP n'est pas sensible à la casse.</li>
+          <li><strong>//</strong> ou <strong>#</strong> = commentaire.</li>
+          <li><strong>/* */</strong> = commentaire multi-lignes.</li>
+          <li>
+            Chaque déclaration en PHP doit être terminée par un point-virgule ;
+          </li>
+        </ul>
+        <h2 class="text-center text-success p-3 text-underline">
+          <u>Les variables</u>
+        </h2>
+        <ul>
+          <li>
+            Les <strong>Strings</strong> (chaînes de caractère) sont des
+            collections de texte que l'ordinateur traite comme un seul élément
+            de données.
+          </li>
+
+          <li>
+            Une chaîne peut être de n'importe quelle longueur et contenir des
+            lettres, des chiffres, des symboles ou des espaces entourés de
+            guillemets.
+          </li>
+
+          <li>
+            Afin d'inclure certains caractères dans les chaînes de caractères,
+            nous devons utiliser des séquences d'échappement:
+            <strong>\</strong>.
+          </li>
+          <li><strong>\n</strong> permet de faire un saut de ligne.</li>
+          <li>
+            Nous pouvons utiliser l'opérateur de concaténation
+            <strong>(.)</strong> pour combiner deux chaînes de caractères en une
+            seule.
+          </li>
+          <li>
+            On déclare une variable en utilisant le signe dollar
+            <strong>$</strong> suivi du nom de la variable, puis on utilise
+            l'opérateur d'affectation <strong>=</strong> pour lui donner une
+            valeur. ex: <code>$name = "Core";</code>
+          </li>
+          <li>
+            PHP dispose d'une analyse syntaxique des variables qui nous permet
+            d'inclure des variables directement dans nos chaînes de caractères.
+            On peut aussi utiliser la syntaxe suivante:
+            <code>${var_name}</code> pour insérer la variable dans une chaîne de
+            caractères.
+          </li>
+          <li>
+            Une fois qu'une variable a été assignée, on peut changer sa valeur.
+            C'est ce qu'on appelle la réaffectation.
+          </li>
+          <li>
+            Nous pouvons créer un alias pour une variable, au lieu d'une simple
+            copie, en utilisant l'opérateur d'affectation de référence
+            <strong>=&</strong>.
+          </li>
+          <li>
+            L'opérateur d'affectation concaténateur <strong>.=</strong> est une
+            notation abrégée permettant de réaffecter une variable de type
+            chaîne à sa valeur actuelle, à laquelle est ajoutée une autre valeur
+            de type chaîne. Ex: <code>$name .= " Mathieu" </code>
+          </li>
+        </ul>
+        <h2 class="text-center text-success p-3 text-underline">
+          <u>Les Nombres</u>
+        </h2>
+        <ul>
+          <li>
+            PHP possède deux types de données numériques : les entiers et les
+            nombres à virgule flottante.
+          </li>
+
+          <li>
+            Nous pouvons utiliser les opérateurs arithmétiques pour effectuer
+            des opérations mathématiques:
+          </li>
+          <table class="table mt-3">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Operation</th>
+                <th scope="col">Symbole</th>
+                <th scope="col">Exemple</th>
+                <th scope="col">Console</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Addition</th>
+                <td>+</td>
+                <td><code>echo 1 + 4.5;</code></td>
+                <td class="text-secondary">Prints: 5.5</td>
+              </tr>
+              <tr>
+                <th scope="row">Soustraction</th>
+                <td>-</td>
+                <td><code>echo 9 - 1;</code></td>
+                <td class="text-secondary">Prints: 8</td>
+              </tr>
+              <tr>
+                <th scope="row">Multiplication</th>
+                <td>*</td>
+                <td><code>echo -1.9 * 2.9;</code></td>
+                <td class="text-secondary">Prints: -5.51</td>
+              </tr>
+              <tr>
+                <th scope="row">Division</th>
+                <td>/</td>
+                <td><code>echo 9 / 1;</code></td>
+                <td class="text-secondary">Prints: 9</td>
+              </tr>
+              <tr>
+                <th scope="row">Modulo</th>
+                <td>%</td>
+                <td><code> echo 11 % 3;</code></td>
+                <td class="text-secondary">Prints: 2</td>
+              </tr>
+              <tr>
+                <th scope="row">Exponentiation</th>
+                <td>**</td>
+                <td><code>echo 8 ** 2; </code></td>
+                <td class="text-secondary">Prints: 64</td>
+              </tr>
+            </tbody>
+          </table>
+          <li>
+            Les opérations ont un ordre de préséance, ce qui signifie que
+            certains types d'opérations dans une chaîne seront évalués avant les
+            autres : la première opération évaluée sera toute opération entourée
+            de parenthèses (()), puis les exposants (**), puis la multiplication
+            (*) et la division (/), et enfin l'addition (+) et la soustraction
+            (-)
+          </li>
+          <li>
+            Nous pouvons attribuer des valeurs numériques aux variables et
+            ensuite effectuer des opérations numériques avec elles.
+          </li>
+          <li>
+            Nous pouvons utiliser les opérateurs d'affectation mathématiques
+            comme raccourci lors de la réaffectation des variables numériques :
+          </li>
+
+          <table class="table mt-3">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Operation</th>
+                <th scope="col">Long Syntax:</th>
+                <th scope="col">Short syntax:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Addition</th>
+                <td>$x = $x + $y</td>
+                <td>$x += $y</td>
+              </tr>
+              <tr>
+                <th scope="row">Soustraction</th>
+                <td>$x = $x - $y</td>
+                <td>$x -= $y</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">Multiplication</th>
+                <td>$x = $x * $y</td>
+                <td>$x *= $y</td>
+                
+              </tr>
+              <tr>
+                <th scope="row">Division</th>
+                <td>$x = $x / $y</td>
+                <td>$x /= $y</td>
+              
+              </tr>
+              <tr>
+                <th scope="row">Modulo</th>
+                <td>$x = $x % $y</td>
+                <td>$x %= $y</td>
                
-                <li> Une chaîne peut être de n'importe quelle longueur et contenir des lettres, des chiffres, des symboles ou des espaces entourés de guillemets.</li>
-               
-                <li>Afin d'inclure certains caractères dans les chaînes de caractères, nous devons utiliser des séquences d'échappement: <strong>\</strong>.</li>
-                <li><strong>\n</strong> permet de faire un saut de ligne.</li>
-                <li>Nous pouvons utiliser l'opérateur de concaténation <strong>(.)</strong>  pour combiner deux chaînes de caractères en une seule.</li>
-                <li>On déclare une variable en utilisant le signe dollar <strong>$</strong>  suivi du nom de la variable, puis on utilise l'opérateur d'affectation <strong>=</strong> pour lui donner une valeur. ex: <code>$name = "Core";</code></li>
-                <li>PHP dispose d'une analyse syntaxique des variables qui nous permet d'inclure des variables directement dans nos chaînes de caractères. On peut aussi utiliser la syntaxe suivante: <code>${var_name}</code> pour insérer la variable dans une chaîne de caractères.</li>
-                <li>Une fois qu'une variable a été assignée, on peut changer sa valeur. C'est ce qu'on appelle la réaffectation.</li>
-                <li>Nous pouvons créer un alias pour une variable, au lieu d'une simple copie, en utilisant l'opérateur d'affectation de référence <strong>=&</strong>.</li>
-                <li>L'opérateur d'affectation concaténateur <strong>.=</strong>  est une notation abrégée permettant de réaffecter une variable de type chaîne à sa valeur actuelle, à laquelle est ajoutée une autre valeur de type chaîne. Ex: <code>$name .= " Mathieu" </code></li>
-            </ul>
-
-            
-
-
-         
-        </div>
+              </tr>
+             
+            </tbody>
+          </table>
+        </ul>
+      </div>
     </section>
-
-
- 
-</body>
+  </body>
 </html>
