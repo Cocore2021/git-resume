@@ -205,27 +205,22 @@
                 <th scope="row">Soustraction</th>
                 <td>$x = $x - $y</td>
                 <td>$x -= $y</td>
-                
               </tr>
               <tr>
                 <th scope="row">Multiplication</th>
                 <td>$x = $x * $y</td>
                 <td>$x *= $y</td>
-                
               </tr>
               <tr>
                 <th scope="row">Division</th>
                 <td>$x = $x / $y</td>
                 <td>$x /= $y</td>
-              
               </tr>
               <tr>
                 <th scope="row">Modulo</th>
                 <td>$x = $x % $y</td>
                 <td>$x %= $y</td>
-               
               </tr>
-             
             </tbody>
           </table>
         </ul>
@@ -236,43 +231,155 @@
           </h2>
           <ul>
             <li>
-              Nous pouvons regrouper un ensemble d'instructions au sein d'une fonction nommée afin de les réutiliser quand nous le souhaitons.
+              Nous pouvons regrouper un ensemble d'instructions au sein d'une
+              fonction nommée afin de les réutiliser quand nous le souhaitons.
             </li>
             <li>
-              Lorsque nous invoquons une fonction, l'ordinateur exécute le corps de la fonction, spécifié par le bloc de code qui suit la liste des paramètres.
+              Lorsque nous invoquons une fonction, l'ordinateur exécute le corps
+              de la fonction, spécifié par le bloc de code qui suit la liste des
+              paramètres.
             </li>
             <li>
-              Les fonctions peuvent renvoyer une valeur en utilisant le mot clé return, sinon elles renvoient NULL, ce qui signifie aucune valeur.
-
+              Les fonctions peuvent renvoyer une valeur en utilisant le mot clé
+              return, sinon elles renvoient NULL, ce qui signifie aucune valeur.
             </li>
-            <li>Nous pouvons stocker la valeur de retour d'une fonction dans une variable ou l'utiliser de n'importe quelle autre manière que nous utiliserions une valeur.</li>
-            <li>Nous pouvons définir des fonctions avec des paramètres qui sont des variables auxquelles nous pouvons nous référer tout au long du corps de notre fonction.</li>
-            <li>Lorsque nous invoquons des fonctions, les valeurs que nous leur donnons sont appelées arguments.</li>
+            <li>
+              Nous pouvons stocker la valeur de retour d'une fonction dans une
+              variable ou l'utiliser de n'importe quelle autre manière que nous
+              utiliserions une valeur.
+            </li>
+            <li>
+              Nous pouvons définir des fonctions avec des paramètres qui sont
+              des variables auxquelles nous pouvons nous référer tout au long du
+              corps de notre fonction.
+            </li>
+            <li>
+              Lorsque nous invoquons des fonctions, les valeurs que nous leur
+              donnons sont appelées arguments.
+            </li>
             <li>Les fonctions peuvent avoir plusieurs paramètres.</li>
-            <li>L'ordre dans lequel les arguments sont passés détermine les paramètres auxquels ils correspondent.</li>
-            <li>Vous pouvez rendre un argument facultatif en fournissant à son paramètre correspondant une valeur par défaut avec le signe <strong>=</strong> .</li>
-            <li>Si vous faites précéder un paramètre du signe de référence (&), cet argument sera transmis par référence.</li>
-            <li>Les variables des fonctions ont une portée locale et ne sont pas accessibles depuis l'extérieur de la fonction.</li>
-            <li>Nous pouvons utiliser le mot-clé <strong>global</strong>  pour utiliser les variables de la portée globale dans une fonction.</li>
+            <li>
+              L'ordre dans lequel les arguments sont passés détermine les
+              paramètres auxquels ils correspondent.
+            </li>
+            <li>
+              Vous pouvez rendre un argument facultatif en fournissant à son
+              paramètre correspondant une valeur par défaut avec le signe
+              <strong>=</strong> .
+            </li>
+            <li>
+              Si vous faites précéder un paramètre du signe de référence (&),
+              cet argument sera transmis par référence.
+            </li>
+            <li>
+              Les variables des fonctions ont une portée locale et ne sont pas
+              accessibles depuis l'extérieur de la fonction.
+            </li>
+            <li>
+              Nous pouvons utiliser le mot-clé <strong>global</strong> pour
+              utiliser les variables de la portée globale dans une fonction.
+            </li>
           </ul>
-          <img src="images/php_functions_syntax.png" alt="" class="img-fluid w-70 d-block mx-auto">
-
-
+          <img
+            src="images/php_functions_syntax.png"
+            alt=""
+            class="img-fluid w-70 d-block mx-auto"
+          />
         </section>
         <section>
           <h2 class="text-center text-success p-3 text-underline">
             <u>Les fonctions intégrée à PHP</u>
           </h2>
           <ul>
-            <li>La fonction <strong>gettype()</strong>  prend une variable comme argument et renvoie une valeur de type chaîne représentant le type de données de l'argument. </li>
-            <li> La fonction <strong>var_dump() </strong> prend également un argument variable. Elle imprime les détails de l'argument qu'elle reçoit.</li>
+            <li>
+              La fonction <strong>gettype()</strong> prend une variable comme
+              argument et renvoie une valeur de type chaîne représentant le type
+              de données de l'argument.
+            </li>
+            <li>
+              La fonction <strong>var_dump() </strong> prend également un
+              argument variable. Elle imprime les détails de l'argument qu'elle
+              reçoit.
+            </li>
+            <li>
+              La fonction <strong>strrev()</strong> prend une chaîne de
+              caractères comme argument et renvoie une chaîne contenant tous les
+              caractères de la chaîne originale dans l'ordre inverse. Ex:
+              <code>echo strrev("Hello, World!");</code>
+            </li>
+            <li>
+              La fonction <strong>strtolower() </strong> permet de transformer
+              une chaîne d'arguments en toutes les lettres minuscules.
+            </li>
+            <li>
+              La fonction <strong>str_repeat() </strong> prend une chaîne de caractères comme premier argument et un nombre comme second. Elle renvoie une chaîne contenant la chaîne de l'argument répétée le nombre de fois de l'argument. Ex: <code>echo str_repeat("hi", 10); // Prints: hihihihihihihihihihi </code>
+            </li>
+            <li>
+              La fonction <strong>substr_count() </strong> renvoie le nombre d'instances d'une sous-chaîne dans une chaîne de caractères. Elle prend deux arguments, la chaîne à rechercher - et la chaîne à rechercher. <code>echo substr_count($story, "like"); // Prints: 8</code>
+            </li>
+            <li>La fonction <strong>abs()</strong>  renvoie la valeur absolue de son argument numérique :</li>
+            <li>
+              Une autre fonction utile est la fonction <strong>round()</strong>  qui renvoie le nombre entier le plus proche de son argument numérique :
+            </li>
+            <li>
+              La fonction <strong>rand()</strong>  renvoie un nombre entier aléatoire. Si nous souhaitons avoir plus de contrôle sur le nombre aléatoire que nous générons, nous pouvons invoquer la fonction rand() avec deux arguments entiers représentant le plus petit nombre aléatoire autorisé et le plus grand nombre aléatoire autorisé. 
+            </li>
+            <li>La fonction <strong>str_pad() </strong> remplace une chaîne de caractères par une nouvelle longueur.</li>
+            <table class="table mt-3">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Paramètre</th>
+                  <th scope="col">Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <em>string</em>
+                  </td>
+                  <td>Requis. Spécifie la chaîne à compléter</td>
+                </tr>
+                <tr>
+                  <td>
+                    <em>length</em>
+                  </td>
+                  <td>Obligatoire. Spécifie la nouvelle longueur de la chaîne. Si cette valeur est inférieure à la longueur originale de la chaîne, rien ne sera fait.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <em>pad_string</em>
+                  </td>
+                  <td>
+                    Facultatif. Spécifie la chaîne à utiliser pour le remplissage. La valeur par défaut est l'espace blanc.
+                    Obligatoire. Spécifie la nouvelle longueur de la chaîne. Si cette valeur est inférieure à la longueur originale de la chaîne, rien ne sera fait.
+                    </td>
+                </tr>
+                <tr>
+                  <td><em>pad_type</em></td>
+                  <td>Facultatif. Indique de quel côté il faut compléter la chaîne.
+                    <ul>
+                      <li>STR_PAD_BOTH </li>
+                      <li>STR_PAD_LEFT</li>
+                      <li>STR_PAD_RIGHT - comportement par défaut</li>
+                    </ul>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td> <em>Exemple</em> </td>
+                  <td> <code>echo str_pad($str,20,".");</code> </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr>
+          <li>
+            La fonction <strong>strtoupper()</strong> renvoie une chaîne en majuscules.
+          </li>
+          <li>La fonction <strong>ceil()</strong> arrondit au nombre supérieur</li>
+          
           </ul>
-
-
         </section>
-
       </div>
     </main>
-
   </body>
 </html>
