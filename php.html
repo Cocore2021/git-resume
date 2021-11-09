@@ -31,7 +31,7 @@
       </nav>
     </header>
 
-    <section>
+    <main>
       <div class="container">
         <h2 class="text-center text-success p-3 text-underline">
           <u>Introduction</u>
@@ -229,7 +229,50 @@
             </tbody>
           </table>
         </ul>
+
+        <section id="function">
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Les fonctions</u>
+          </h2>
+          <ul>
+            <li>
+              Nous pouvons regrouper un ensemble d'instructions au sein d'une fonction nommée afin de les réutiliser quand nous le souhaitons.
+            </li>
+            <li>
+              Lorsque nous invoquons une fonction, l'ordinateur exécute le corps de la fonction, spécifié par le bloc de code qui suit la liste des paramètres.
+            </li>
+            <li>
+              Les fonctions peuvent renvoyer une valeur en utilisant le mot clé return, sinon elles renvoient NULL, ce qui signifie aucune valeur.
+
+            </li>
+            <li>Nous pouvons stocker la valeur de retour d'une fonction dans une variable ou l'utiliser de n'importe quelle autre manière que nous utiliserions une valeur.</li>
+            <li>Nous pouvons définir des fonctions avec des paramètres qui sont des variables auxquelles nous pouvons nous référer tout au long du corps de notre fonction.</li>
+            <li>Lorsque nous invoquons des fonctions, les valeurs que nous leur donnons sont appelées arguments.</li>
+            <li>Les fonctions peuvent avoir plusieurs paramètres.</li>
+            <li>L'ordre dans lequel les arguments sont passés détermine les paramètres auxquels ils correspondent.</li>
+            <li>Vous pouvez rendre un argument facultatif en fournissant à son paramètre correspondant une valeur par défaut avec le signe <strong>=</strong> .</li>
+            <li>Si vous faites précéder un paramètre du signe de référence (&), cet argument sera transmis par référence.</li>
+            <li>Les variables des fonctions ont une portée locale et ne sont pas accessibles depuis l'extérieur de la fonction.</li>
+            <li>Nous pouvons utiliser le mot-clé <strong>global</strong>  pour utiliser les variables de la portée globale dans une fonction.</li>
+          </ul>
+          <img src="images/php_functions_syntax.png" alt="" class="img-fluid w-70 d-block mx-auto">
+
+
+        </section>
+        <section>
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Les fonctions intégrée à PHP</u>
+          </h2>
+          <ul>
+            <li>La fonction <strong>gettype()</strong>  prend une variable comme argument et renvoie une valeur de type chaîne représentant le type de données de l'argument. </li>
+            <li> La fonction <strong>var_dump() </strong> prend également un argument variable. Elle imprime les détails de l'argument qu'elle reçoit.</li>
+          </ul>
+
+
+        </section>
+
       </div>
-    </section>
+    </main>
+
   </body>
 </html>
