@@ -1,57 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="bg-dark">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Home</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="git.html">Git</a>
-                <a class="nav-item nav-link" href="#">Bootstrap</a>
-                <a class="nav-item nav-link  active" href="jquery.html">JQuery</a>
-                <a class="nav-item nav-link" href="php.html">PHP</a>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Home</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="git.html">Git</a>
+            <a class="nav-item nav-link" href="#">Bootstrap</a>
+            <a class="nav-item nav-link active" href="jquery.html">JQuery</a>
+            <a class="nav-item nav-link" href="php.html">PHP</a>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- Les bases -->
-    <section>
-        <div class="container">
-            <h2 class="text-center text-success p-3 text-underline"><u>Les fonctions de base</u></h2>
-            <ul>
-                <li> <strong>.ready()</strong>  attend que le DOM soit entièrement chargé, et invoque alors la fonction de rappel spécifiée.</li>
-                
-            </ul>
-            <h2 class="text-center text-success p-3 text-underline"><u>Parcourir le DOM</u></h2>
-            <ul>
-                <li> <strong>.children()</strong>  nous permet de sélectionner les enfants d'un élément. Cette méthode sélectionne uniquement les enfants direct.</li>
-                <li> <strong>.parent()</strong>  nous permet de sélectionner le parent d'un élément.</li>
-                <li> <strong>.siblings()</strong>  nous permet de sélectionner les éléments qui se trouvent au même niveau dans le DOM que l'élément sélectionné.</li>
-                <li> <strong>.closest()</strong>  nous permet de sélectionner l'élément le plus proche avec le sélecteur spécifié en paramètre.</li>
-                <li> <strong>.next() et .prev()</strong>  nous permettent de sélectionner l'élément sibling suivant ou précédant.</li>
-                <li> <strong>.find() </strong>  nous permet de sélectionner un élément singulier qui est le descendant d'un autre élément. Il retournera tous les descendant qui répondent au critère.</li>
-                
-            </ul>
+    <div class="container">
+      <section>
+        <h2 class="text-center text-success p-3 text-underline">
+          <u>Les fonctions de base</u>
+        </h2>
+        <ul>
+          <li>
+            Nous devons inclure la balise <strong>&lt;script&gt;</strong> dans
+            le document HTML avant de créer un lien vers un fichier JavaScript
+            qui utilise la bibliothèque jQuery.
+          </li>
+          <li>
+            <strong>.ready()</strong> attend que le DOM soit entièrement chargé,
+            et invoque alors la fonction de rappel spécifiée.
+          </li>
+          <li>
+            Nous pouvons cibler un élément soit par sa classe, son id ou son
+            genre:
+
+            <ol>
+              <li>Cibler avec la classe: <code>$('.menu-button');</code></li>
+              <li>Cibler avec l'id: <code>$('#menu-button');</code></li>
+              <li>Cibler avec son genre: <code>$('p');</code></li>
+            </ol>
+          </li>
+          <li>
+            Nous pouvons également stocker un élément dans une variable, nous
+            nommerons alors cette variable en commençant par un $, ce n'est pas
+            obligatoire mais c'est une bonne pratique. Ex:
+            <code>const $menuButton = $('.menu-button');</code>
+          </li>
+          <li>
+            La méthode <strong>on()</strong> ajoute des gestionnaires
+            d'événements aux objets jQuery. La méthode prend deux paramètres :
+            une chaîne de caractères déclarant l'événement à écouter (le
+            gestionnaire) et une fonction de rappel à lancer lorsque l'événement
+            est détecté.
+          </li>
+        </ul>
+      </section>
+
+      <section id="effects">
+        <h2 class="text-center text-success p-3 text-underline">
+          <u>Les effets</u>
+        </h2>
+        <ul>
+          <li>
+            La méthode <strong>hide()</strong> et <strong>show()</strong> font
+            apparaître ou disparaître un élément. La méthode
+            <strong>toggle()</strong> fait les deux en même temps et agit comme
+            un interrupteur on/off. Cette méthode peut prendre un paramètre: la
+            vitesse de l'effet(slow, fast, ms)
+          </li>
+
+          <li>
+            La méthode fade est utilisée pour faire apparaître ou disparaître un
+            élément avec un fondu
+            <ol>
+              <li>
+               <strong>fadeIn()</strong> est utilisée pour
+                faire apparaître en fondu un élément caché.
+              </li>
+              <li>
+                <strong>fadeOut()</strong> est utilisée pour
+                faire disparaître en fondu un élément caché.
+              </li>
+              <li>
+                <strong>fadeToggle()</strong> combine fadeIn et fadeOut.
+              </li>
 
 
-         
-        </div>
-    </section>
+              <li>
+                <strong>fadeTo()</strong> permet de réaliser
+                un fondu vers une opacité donnée (valeur comprise entre 0 et 1).
+                Sytaxe: <code>$(selector).fadeTo(speed,opacity,callback);</code>
+              </li>
+            </ol>
+          </li>
 
+          <li>
+            Les méthodes jQuery slide font glisser les éléments vers le haut et
+            vers le bas.
+            <ol>
+              <li>
+                <strong>slideDown()</strong> sert à faire apparaître un élément
+                vers le bas.
+              </li>
+              <li>
+                <strong>slideUp()</strong> sert à faire disparaître un élément
+                vers le haut.
+              </li>
+              <li>
+                <strong>slideToggle()</strong> combine slideDown() et slideIn().
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </section>
 
-      <!-- Optional JavaScript -->
-      <script src="jquery.js"></script>
-      <script src="bootstrap.min.js"></script>
-</body>
+      <section>
+        <h2 class="text-center text-success p-3 text-underline">
+          <u>Parcourir le DOM</u>
+        </h2>
+        <ul>
+          <li>
+            <strong>.children()</strong> nous permet de sélectionner les enfants
+            d'un élément. Cette méthode sélectionne uniquement les enfants
+            direct.
+          </li>
+          <li>
+            <strong>.parent()</strong> nous permet de sélectionner le parent
+            d'un élément.
+          </li>
+          <li>
+            <strong>.siblings()</strong> nous permet de sélectionner les
+            éléments qui se trouvent au même niveau dans le DOM que l'élément
+            sélectionné.
+          </li>
+          <li>
+            <strong>.closest()</strong> nous permet de sélectionner l'élément le
+            plus proche avec le sélecteur spécifié en paramètre.
+          </li>
+          <li>
+            <strong>.next() et .prev()</strong> nous permettent de sélectionner
+            l'élément sibling suivant ou précédant.
+          </li>
+          <li>
+            <strong>.find() </strong> nous permet de sélectionner un élément
+            singulier qui est le descendant d'un autre élément. Il retournera
+            tous les descendant qui répondent au critère.
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="jquery.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </body>
 </html>
