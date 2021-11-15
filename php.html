@@ -33,197 +33,207 @@
 
     <main>
       <div class="container">
-        <h2 class="text-center text-success p-3 text-underline">
-          <u>Introduction</u>
-        </h2>
-        <ul>
-          <li><strong> &lt;?php</strong> = tag d'ouverture PHP</li>
-          <li>
-            <strong> ?&gt;</strong> = tag de fermeture PHP, il n'est pas
-            obligatoire.
-          </li>
-          <li>
-            <strong>echo</strong> est un mot clé pout afficher du texte. Il faut
-            mettre le texte à afficher entre guillemets.
-          </li>
-          <li>PHP n'est pas sensible à la casse.</li>
-          <li><strong>//</strong> ou <strong>#</strong> = commentaire.</li>
-          <li><strong>/* */</strong> = commentaire multi-lignes.</li>
-          <li>
-            Chaque déclaration en PHP doit être terminée par un point-virgule ;
-          </li>
-        </ul>
-        <h2 class="text-center text-success p-3 text-underline">
-          <u>Les variables</u>
-        </h2>
-        <ul>
-          <li>
-            Les <strong>Strings</strong> (chaînes de caractère) sont des
-            collections de texte que l'ordinateur traite comme un seul élément
-            de données.
-          </li>
+        <section id="introduction">
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Introduction</u>
+          </h2>
+          <ul>
+            <li><strong> &lt;?php</strong> = tag d'ouverture PHP</li>
+            <li>
+              <strong> ?&gt;</strong> = tag de fermeture PHP, il n'est pas
+              obligatoire.
+            </li>
+            <li>
+              <strong>echo</strong> est un mot clé pout afficher du texte. Il
+              faut mettre le texte à afficher entre guillemets.
+            </li>
+            <li>PHP n'est pas sensible à la casse.</li>
+            <li><strong>//</strong> ou <strong>#</strong> = commentaire.</li>
+            <li><strong>/* */</strong> = commentaire multi-lignes.</li>
+            <li>
+              Chaque déclaration en PHP doit être terminée par un point-virgule
+              ;
+            </li>
+          </ul>
+        </section>
 
-          <li>
-            Une chaîne peut être de n'importe quelle longueur et contenir des
-            lettres, des chiffres, des symboles ou des espaces entourés de
-            guillemets.
-          </li>
+        <section id="variables">
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Les variables</u>
+          </h2>
+          <ul>
+            <li>
+              Les <strong>Strings</strong> (chaînes de caractère) sont des
+              collections de texte que l'ordinateur traite comme un seul élément
+              de données.
+            </li>
 
-          <li>
-            Afin d'inclure certains caractères dans les chaînes de caractères,
-            nous devons utiliser des séquences d'échappement:
-            <strong>\</strong>.
-          </li>
-          <li><strong>\n</strong> permet de faire un saut de ligne.</li>
-          <li>
-            Nous pouvons utiliser l'opérateur de concaténation
-            <strong>(.)</strong> pour combiner deux chaînes de caractères en une
-            seule.
-          </li>
-          <li>
-            On déclare une variable en utilisant le signe dollar
-            <strong>$</strong> suivi du nom de la variable, puis on utilise
-            l'opérateur d'affectation <strong>=</strong> pour lui donner une
-            valeur. ex: <code>$name = "Core";</code>
-          </li>
-          <li>
-            PHP dispose d'une analyse syntaxique des variables qui nous permet
-            d'inclure des variables directement dans nos chaînes de caractères.
-            On peut aussi utiliser la syntaxe suivante:
-            <code>${var_name}</code> pour insérer la variable dans une chaîne de
-            caractères.
-          </li>
-          <li>
-            Une fois qu'une variable a été assignée, on peut changer sa valeur.
-            C'est ce qu'on appelle la réaffectation.
-          </li>
-          <li>
-            Nous pouvons créer un alias pour une variable, au lieu d'une simple
-            copie, en utilisant l'opérateur d'affectation de référence
-            <strong>=&</strong>.
-          </li>
-          <li>
-            L'opérateur d'affectation concaténateur <strong>.=</strong> est une
-            notation abrégée permettant de réaffecter une variable de type
-            chaîne à sa valeur actuelle, à laquelle est ajoutée une autre valeur
-            de type chaîne. Ex: <code>$name .= " Mathieu" </code>
-          </li>
-        </ul>
-        <h2 class="text-center text-success p-3 text-underline">
-          <u>Les Nombres</u>
-        </h2>
-        <ul>
-          <li>
-            PHP possède deux types de données numériques : les entiers et les
-            nombres à virgule flottante.
-          </li>
+            <li>
+              Une chaîne peut être de n'importe quelle longueur et contenir des
+              lettres, des chiffres, des symboles ou des espaces entourés de
+              guillemets.
+            </li>
 
-          <li>
-            Nous pouvons utiliser les opérateurs arithmétiques pour effectuer
-            des opérations mathématiques:
-          </li>
-          <table class="table mt-3">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Operation</th>
-                <th scope="col">Symbole</th>
-                <th scope="col">Exemple</th>
-                <th scope="col">Console</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Addition</th>
-                <td>+</td>
-                <td><code>echo 1 + 4.5;</code></td>
-                <td class="text-secondary">Prints: 5.5</td>
-              </tr>
-              <tr>
-                <th scope="row">Soustraction</th>
-                <td>-</td>
-                <td><code>echo 9 - 1;</code></td>
-                <td class="text-secondary">Prints: 8</td>
-              </tr>
-              <tr>
-                <th scope="row">Multiplication</th>
-                <td>*</td>
-                <td><code>echo -1.9 * 2.9;</code></td>
-                <td class="text-secondary">Prints: -5.51</td>
-              </tr>
-              <tr>
-                <th scope="row">Division</th>
-                <td>/</td>
-                <td><code>echo 9 / 1;</code></td>
-                <td class="text-secondary">Prints: 9</td>
-              </tr>
-              <tr>
-                <th scope="row">Modulo</th>
-                <td>%</td>
-                <td><code> echo 11 % 3;</code></td>
-                <td class="text-secondary">Prints: 2</td>
-              </tr>
-              <tr>
-                <th scope="row">Exponentiation</th>
-                <td>**</td>
-                <td><code>echo 8 ** 2; </code></td>
-                <td class="text-secondary">Prints: 64</td>
-              </tr>
-            </tbody>
-          </table>
-          <li>
-            Les opérations ont un ordre de préséance, ce qui signifie que
-            certains types d'opérations dans une chaîne seront évalués avant les
-            autres : la première opération évaluée sera toute opération entourée
-            de parenthèses (()), puis les exposants (**), puis la multiplication
-            (*) et la division (/), et enfin l'addition (+) et la soustraction
-            (-)
-          </li>
-          <li>
-            Nous pouvons attribuer des valeurs numériques aux variables et
-            ensuite effectuer des opérations numériques avec elles.
-          </li>
-          <li>
-            Nous pouvons utiliser les opérateurs d'affectation mathématiques
-            comme raccourci lors de la réaffectation des variables numériques :
-          </li>
+            <li>
+              Afin d'inclure certains caractères dans les chaînes de caractères,
+              nous devons utiliser des séquences d'échappement:
+              <strong>\</strong>.
+            </li>
+            <li><strong>\n</strong> permet de faire un saut de ligne.</li>
+            <li>
+              Nous pouvons utiliser l'opérateur de concaténation
+              <strong>(.)</strong> pour combiner deux chaînes de caractères en
+              une seule.
+            </li>
+            <li>
+              On déclare une variable en utilisant le signe dollar
+              <strong>$</strong> suivi du nom de la variable, puis on utilise
+              l'opérateur d'affectation <strong>=</strong> pour lui donner une
+              valeur. ex: <code>$name = "Core";</code>
+            </li>
+            <li>
+              PHP dispose d'une analyse syntaxique des variables qui nous permet
+              d'inclure des variables directement dans nos chaînes de
+              caractères. On peut aussi utiliser la syntaxe suivante:
+              <code>${var_name}</code> pour insérer la variable dans une chaîne
+              de caractères.
+            </li>
+            <li>
+              Une fois qu'une variable a été assignée, on peut changer sa
+              valeur. C'est ce qu'on appelle la réaffectation.
+            </li>
+            <li>
+              Nous pouvons créer un alias pour une variable, au lieu d'une
+              simple copie, en utilisant l'opérateur d'affectation de référence
+              <strong>=&</strong>.
+            </li>
+            <li>
+              L'opérateur d'affectation concaténateur <strong>.=</strong> est
+              une notation abrégée permettant de réaffecter une variable de type
+              chaîne à sa valeur actuelle, à laquelle est ajoutée une autre
+              valeur de type chaîne. Ex: <code>$name .= " Mathieu" </code>
+            </li>
+          </ul>
+        </section>
 
-          <table class="table mt-3">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">Operation</th>
-                <th scope="col">Long Syntax:</th>
-                <th scope="col">Short syntax:</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Addition</th>
-                <td>$x = $x + $y</td>
-                <td>$x += $y</td>
-              </tr>
-              <tr>
-                <th scope="row">Soustraction</th>
-                <td>$x = $x - $y</td>
-                <td>$x -= $y</td>
-              </tr>
-              <tr>
-                <th scope="row">Multiplication</th>
-                <td>$x = $x * $y</td>
-                <td>$x *= $y</td>
-              </tr>
-              <tr>
-                <th scope="row">Division</th>
-                <td>$x = $x / $y</td>
-                <td>$x /= $y</td>
-              </tr>
-              <tr>
-                <th scope="row">Modulo</th>
-                <td>$x = $x % $y</td>
-                <td>$x %= $y</td>
-              </tr>
-            </tbody>
-          </table>
-        </ul>
+        <section id="numbers">
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Les Nombres</u>
+          </h2>
+          <ul>
+            <li>
+              PHP possède deux types de données numériques : les entiers et les
+              nombres à virgule flottante.
+            </li>
+
+            <li>
+              Nous pouvons utiliser les opérateurs arithmétiques pour effectuer
+              des opérations mathématiques:
+            </li>
+            <table class="table mt-3">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Operation</th>
+                  <th scope="col">Symbole</th>
+                  <th scope="col">Exemple</th>
+                  <th scope="col">Console</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Addition</th>
+                  <td>+</td>
+                  <td><code>echo 1 + 4.5;</code></td>
+                  <td class="text-secondary">Prints: 5.5</td>
+                </tr>
+                <tr>
+                  <th scope="row">Soustraction</th>
+                  <td>-</td>
+                  <td><code>echo 9 - 1;</code></td>
+                  <td class="text-secondary">Prints: 8</td>
+                </tr>
+                <tr>
+                  <th scope="row">Multiplication</th>
+                  <td>*</td>
+                  <td><code>echo -1.9 * 2.9;</code></td>
+                  <td class="text-secondary">Prints: -5.51</td>
+                </tr>
+                <tr>
+                  <th scope="row">Division</th>
+                  <td>/</td>
+                  <td><code>echo 9 / 1;</code></td>
+                  <td class="text-secondary">Prints: 9</td>
+                </tr>
+                <tr>
+                  <th scope="row">Modulo</th>
+                  <td>%</td>
+                  <td><code> echo 11 % 3;</code></td>
+                  <td class="text-secondary">Prints: 2</td>
+                </tr>
+                <tr>
+                  <th scope="row">Exponentiation</th>
+                  <td>**</td>
+                  <td><code>echo 8 ** 2; </code></td>
+                  <td class="text-secondary">Prints: 64</td>
+                </tr>
+              </tbody>
+            </table>
+            <li>
+              Les opérations ont un ordre de préséance, ce qui signifie que
+              certains types d'opérations dans une chaîne seront évalués avant
+              les autres : la première opération évaluée sera toute opération
+              entourée de parenthèses (()), puis les exposants (**), puis la
+              multiplication (*) et la division (/), et enfin l'addition (+) et
+              la soustraction (-)
+            </li>
+            <li>
+              Nous pouvons attribuer des valeurs numériques aux variables et
+              ensuite effectuer des opérations numériques avec elles.
+            </li>
+            <li>
+              Nous pouvons utiliser les opérateurs d'affectation mathématiques
+              comme raccourci lors de la réaffectation des variables numériques
+              :
+            </li>
+
+            <table class="table mt-3">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Operation</th>
+                  <th scope="col">Long Syntax:</th>
+                  <th scope="col">Short syntax:</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Addition</th>
+                  <td>$x = $x + $y</td>
+                  <td>$x += $y</td>
+                </tr>
+                <tr>
+                  <th scope="row">Soustraction</th>
+                  <td>$x = $x - $y</td>
+                  <td>$x -= $y</td>
+                </tr>
+                <tr>
+                  <th scope="row">Multiplication</th>
+                  <td>$x = $x * $y</td>
+                  <td>$x *= $y</td>
+                </tr>
+                <tr>
+                  <th scope="row">Division</th>
+                  <td>$x = $x / $y</td>
+                  <td>$x /= $y</td>
+                </tr>
+                <tr>
+                  <th scope="row">Modulo</th>
+                  <td>$x = $x % $y</td>
+                  <td>$x %= $y</td>
+                </tr>
+              </tbody>
+            </table>
+          </ul>
+        </section>
 
         <section id="function">
           <h2 class="text-center text-success p-3 text-underline">
@@ -286,8 +296,8 @@
             class="img-fluid w-70 d-block mx-auto"
           />
         </section>
-        <section>
-          <h2 class="text-center text-success p-3 text-underline">
+        <section id="integred-function">
+          <h2 class="text-center text-success p-3 mt-3 text-underline">
             <u>Les fonctions intégrée à PHP</u>
           </h2>
           <ul>
@@ -312,19 +322,42 @@
               une chaîne d'arguments en toutes les lettres minuscules.
             </li>
             <li>
-              La fonction <strong>str_repeat() </strong> prend une chaîne de caractères comme premier argument et un nombre comme second. Elle renvoie une chaîne contenant la chaîne de l'argument répétée le nombre de fois de l'argument. Ex: <code>echo str_repeat("hi", 10); // Prints: hihihihihihihihihihi </code>
+              La fonction <strong>str_repeat() </strong> prend une chaîne de
+              caractères comme premier argument et un nombre comme second. Elle
+              renvoie une chaîne contenant la chaîne de l'argument répétée le
+              nombre de fois de l'argument. Ex:
+              <code
+                >echo str_repeat("hi", 10); // Prints: hihihihihihihihihihi
+              </code>
             </li>
             <li>
-              La fonction <strong>substr_count() </strong> renvoie le nombre d'instances d'une sous-chaîne dans une chaîne de caractères. Elle prend deux arguments, la chaîne à rechercher - et la chaîne à rechercher. <code>echo substr_count($story, "like"); // Prints: 8</code>
+              La fonction <strong>substr_count() </strong> renvoie le nombre
+              d'instances d'une sous-chaîne dans une chaîne de caractères. Elle
+              prend deux arguments, la chaîne à rechercher - et la chaîne à
+              rechercher.
+              <code>echo substr_count($story, "like"); // Prints: 8</code>
             </li>
-            <li>La fonction <strong>abs()</strong>  renvoie la valeur absolue de son argument numérique :</li>
             <li>
-              Une autre fonction utile est la fonction <strong>round()</strong>  qui renvoie le nombre entier le plus proche de son argument numérique :
+              La fonction <strong>abs()</strong> renvoie la valeur absolue de
+              son argument numérique :
             </li>
             <li>
-              La fonction <strong>rand()</strong>  renvoie un nombre entier aléatoire. Si nous souhaitons avoir plus de contrôle sur le nombre aléatoire que nous générons, nous pouvons invoquer la fonction rand() avec deux arguments entiers représentant le plus petit nombre aléatoire autorisé et le plus grand nombre aléatoire autorisé. 
+              Une autre fonction utile est la fonction
+              <strong>round()</strong> qui renvoie le nombre entier le plus
+              proche de son argument numérique :
             </li>
-            <li>La fonction <strong>str_pad() </strong> remplace une chaîne de caractères par une nouvelle longueur.</li>
+            <li>
+              La fonction <strong>rand()</strong> renvoie un nombre entier
+              aléatoire. Si nous souhaitons avoir plus de contrôle sur le nombre
+              aléatoire que nous générons, nous pouvons invoquer la fonction
+              rand() avec deux arguments entiers représentant le plus petit
+              nombre aléatoire autorisé et le plus grand nombre aléatoire
+              autorisé.
+            </li>
+            <li>
+              La fonction <strong>str_pad() </strong> remplace une chaîne de
+              caractères par une nouvelle longueur.
+            </li>
             <table class="table mt-3">
               <thead class="thead-dark">
                 <tr>
@@ -343,40 +376,69 @@
                   <td>
                     <em>length</em>
                   </td>
-                  <td>Obligatoire. Spécifie la nouvelle longueur de la chaîne. Si cette valeur est inférieure à la longueur originale de la chaîne, rien ne sera fait.</td>
+                  <td>
+                    Obligatoire. Spécifie la nouvelle longueur de la chaîne. Si
+                    cette valeur est inférieure à la longueur originale de la
+                    chaîne, rien ne sera fait.
+                  </td>
                 </tr>
                 <tr>
                   <td>
                     <em>pad_string</em>
                   </td>
                   <td>
-                    Facultatif. Spécifie la chaîne à utiliser pour le remplissage. La valeur par défaut est l'espace blanc.
-                    Obligatoire. Spécifie la nouvelle longueur de la chaîne. Si cette valeur est inférieure à la longueur originale de la chaîne, rien ne sera fait.
-                    </td>
-                </tr>
-                <tr>
-                  <td><em>pad_type</em></td>
-                  <td>Facultatif. Indique de quel côté il faut compléter la chaîne.
-                    <ul>
-                      <li>STR_PAD_BOTH </li>
-                      <li>STR_PAD_LEFT</li>
-                      <li>STR_PAD_RIGHT - comportement par défaut</li>
-                    </ul>
-
+                    Facultatif. Spécifie la chaîne à utiliser pour le
+                    remplissage. La valeur par défaut est l'espace blanc.
+                    Obligatoire. Spécifie la nouvelle longueur de la chaîne. Si
+                    cette valeur est inférieure à la longueur originale de la
+                    chaîne, rien ne sera fait.
                   </td>
                 </tr>
                 <tr>
-                  <td> <em>Exemple</em> </td>
-                  <td> <code>echo str_pad($str,20,".");</code> </td>
+                  <td><em>pad_type</em></td>
+                  <td>
+                    Facultatif. Indique de quel côté il faut compléter la
+                    chaîne.
+                    <ul>
+                      <li>STR_PAD_BOTH</li>
+                      <li>STR_PAD_LEFT</li>
+                      <li>STR_PAD_RIGHT - comportement par défaut</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td><em>Exemple</em></td>
+                  <td><code>echo str_pad($str,20,".");</code></td>
                 </tr>
               </tbody>
             </table>
-            <hr>
-          <li>
-            La fonction <strong>strtoupper()</strong> renvoie une chaîne en majuscules.
-          </li>
-          <li>La fonction <strong>ceil()</strong> arrondit au nombre supérieur</li>
-          
+            <hr />
+            <li>
+              La fonction <strong>strtoupper()</strong> renvoie une chaîne en
+              majuscules.
+            </li>
+            <li>
+              La fonction <strong>ceil()</strong> arrondit au nombre supérieur
+            </li>
+          </ul>
+        </section>
+        <section id="arrays">
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Les Tableaux</u>
+          </h2>
+          <ul>
+            <li>Syntaxe: <code>$my_arr = array(0,1,2);</code></li>
+            <li>Autre syntaxe plus courte: <code>$number_array = [0, 1, 2, 3];</code></li>
+            <li>Pour imprimer le contenu d'un tableau nous pouvont utiliser la fonction intégrée print_r(): <code>print_r($number_array);</code></li>
+            <li>Si nous voulons simplement imprimer les éléments du tableau listés, nous pouvons convertir le tableau en une chaîne de caractères en utilisant la fonction intégrée implode(). La fonction implode() prend deux arguments : une chaîne de caractères à utiliser entre chaque élément (le $glue), et le tableau à joindre (le $pieces) : <code>echo implode(", ", $number_array);</code></li>
+            <li>On peut accéder aux éléments individuels d'un tableau en utilisant le nom de la variable du tableau et l'indice d'emplacement entouré de crochets ([]), par exemple : <code>echo $my_array[1];</code></li>
+            <li>Nous ajoutons des éléments à la fin d'un tableau en prenant le nom de la variable et en ajoutant des crochets ([]), l'opérateur d'affectation (=) et l'élément que nous voulons ajouter : <code>$string_array[] = "new element";</code></li>
+            <li>La fonction array_pop() prend un tableau comme argument. Elle supprime le dernier élément d'un tableau et renvoie l'élément supprimé.</li>
+            <li>La fonction array_push() prend un tableau comme premier argument. Les arguments qui suivent sont des éléments à ajouter à la fin du tableau. array_push() ajoute chacun des éléments au tableau et renvoie le nouveau nombre d'éléments dans le tableau.</li>
+            <li>La fonction array_shift() supprime le premier élément d'un tableau et renvoie cette valeur. Chacun des éléments du tableau sera décalé d'un indice vers le bas. Par exemple, l'élément qui se trouvait précédemment à l'indice 3 sera maintenant situé à l'indice 2. <br> 
+              Tout comme array_pop(), array_shift() réduit la longueur du tableau, et l'élément supprimé disparaît définitivement.</li>
+            <li>La fonction array_unshift() prend un tableau comme premier argument. Les arguments qui suivent sont des éléments à ajouter au début du tableau. Elle retourne le nouveau nombre d'éléments dans le tableau.</li>
+            
           </ul>
         </section>
       </div>
