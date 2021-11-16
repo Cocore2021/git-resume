@@ -441,6 +441,28 @@
             
           </ul>
         </section>
+        <section id="associative-array">
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Les Tableaux associatifs</u>
+          </h2>
+          <p><dfn>Les tableaux associatifs </dfn> sont des collections de paires clé=	&gt;valeur. La clé d'un tableau associatif doit être soit une chaîne de caractères, soit un nombre entier. Les valeurs contenues peuvent être de n'importe quel type. Nous utilisons l'opérateur =&gt; pour associer une clé à sa valeur. Ex: <code>$my_array = ["panda" =&gt; "very cute", "lizard" =&gt; "cute", "cockroach" =&gt; "not very cute"];</code></p>
+          <ul>
+            <li>Pour imprimer le contenu du tableau associatif nous pouvons utiliser la méthode<strong>print_r()</strong>. Ex: <code>print_r($grades);</code></li>
+            <li>La méthode <strong>implode()</strong> n'imprime que la valeur et pas la clé.</li>
+            <li>Nous accédons à la valeur à des points clés donnés à l'aide de crochets ([]) : <code>echo $my_array["panda"]; </code></li>
+            <li>Pour ajouter de nouveaux éléments à un tableau associatif, nous utilisons l'opérateur d'affectation (=) : <strong>$my_array["capybara"] = "cutest";</strong></li>
+            <li>Nous pouvons supprimer entièrement une paire clé =&gt; valeur en utilisant la fonction PHP <strong>unset()</strong> Ex <code>unset($nums["one"]);</code> . <em>Note : si la clé utilisée n'existe pas dans le tableau, alors rien ne se passe.</em> </li>
+            <li>L'opérateur union <strong>(+) </strong> prend deux tableaux et retourne un nouveau tableau avec toutes les clés uniques du second tableau ajoutées au premier.</li>
+            <li>Il existe deux façons d'assigner une variable à une autre :
+              <ol>
+                <li>Par valeur - ceci crée deux variables qui contiennent des copies de la même valeur mais restent des entités indépendantes.
+                </li>
+                <li>Par référence - cela crée deux noms de variables (alias) qui pointent vers le même espace en mémoire. Ils ne peuvent pas être modifiés séparément ! Ex: <code>$alias =& $favorites;</code>
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </section>
       </div>
     </main>
   </body>
