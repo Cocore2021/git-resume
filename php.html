@@ -463,6 +463,42 @@
             </li>
           </ul>
         </section>
+        <section id="php-and-html">
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>PHP et HTML</u>
+          </h2>
+          <p>PHP est un langage de programmation puissant utilisé pour d'autres applications que la création de modèles HTML, mais l'utilisation de PHP combinée à HTML reste une partie importante des compétences de nombreux développeurs web.</p>
+          <p>Nous pouvons intégrer des scripts PHP dans des documents HTML avec la balise d'ouverture <strong>&lt;?php</strong>  et la balise de fermeture <strong>?&gt;</strong> . Le processeur PHP lira l'ensemble du fichier, évaluera tout le PHP, le traduira en HTML et le transmettra au serveur Web pour qu'il soit envoyé au client.</p>
+
+          <p>Lorsque nous utilisons echo dans le HTML, nous n'imprimons plus dans le terminal, mais dans le document HTML. Ex: <code>echo "<p>My favorite color is {$data['color']}.</p>";</code></p>
+          <ul>
+            <li><strong>&lt;?=</strong>  est un raccourci pour &lt;?php echo.</li>
+            <li>Les superglobals sont des variables globales automatiques qui sont disponibles dans tous les scopes d'un script.</li>
+          </ul>
+          <h3>Les principales superglobales</h3>
+          <ol>
+            <li>$GLOBALS</li>
+            <li>$_SERVER</li>
+            <li>$_GET =&gt; contient un tableau associatif de variables passées au script actuel à l'aide de paramètres de requête dans l'URL.</li>
+            <li>$_POST =&gt; contient un tableau associatif de variables passées au script courant à l'aide d'un formulaire soumis par la méthode "POST".</li>
+            <li>$_FILES</li>
+            <li>$_COOKIE</li>
+            <li>$_SESSION</li>
+            <li>$_REQUEST =&gt; ceci contient le contenu de $_GET, $_POST, et $_COOKIE</li>
+            <li>$_ENV</li>
+          </ol>
+          <h3>La méthode GET</h3>
+          <p>En HTML, le fait de donner la valeur "get" à l'attribut method d'un formulaire indique que vous souhaitez que le formulaire soit soumis à l'aide de la méthode GET. Lorsque cette méthode est utilisée, les entrées du formulaire sont transmises en tant que paramètres dans une chaîne d'interrogation URL.</p>
+          <p>Pour récolter les infos d'un formulaire il faut ajouter l'attribut "name" au formulaire. Ex: <code>&lt;input type="text" name="country"&gt;</code> L'info est traitée sous forme de tableau.</p>
+          <h3>La méthode POST</h3>
+          <p>En HTML, le fait de définir l'attribut method d'un formulaire sur "post" indique que vous souhaitez que le formulaire soit soumis à l'aide de la méthode POST. Lorsque vous utilisez la méthode POST pour soumettre des formulaires, vous ne verrez pas l'URL changer. Les données du formulaire sont envoyées en utilisant les en-têtes de la requête HTTP au lieu des paramètres de l'URL.</p>
+          <p>Lorsque le formulaire est soumis, les données d'entrée sont disponibles dans la superglobale $_POST. Comme pour GET, elles sont également disponibles dans $_REQUEST.</p>
+          <h3>L'attribut action</h3>
+          <p>L'attribut action indique où envoyer les données du formulaire lorsqu'un formulaire est soumis.</p>
+
+
+
+        </section>
       </div>
     </main>
   </body>
