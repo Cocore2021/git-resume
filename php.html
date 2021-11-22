@@ -499,6 +499,49 @@
 
 
         </section>
+        <section>
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Les Booleans et les opérateurs de comparaison</u>
+          </h2>
+          <ul>
+            <li>La déclaration if: <code>if(condition) {code à éxecuter};</code>. </li>
+            <li>La condition, ou l'expression, d'une instruction if peut contenir une valeur booléenne (VRAI ou FAUX), une variable affectée à l'une de ces valeurs ou une expression qui donne la valeur VRAI ou FAUX. Ex: <code>1 &lt; 10; // Evaluates to: TRUE</code> </li>
+            <li>L'opérateur identique <strong>(===) </strong> renvoie VRAI si l'opérande de gauche est identique à l'opérande de droite et FAUX si ce n'est pas le cas. <br> Ex : 
+             <code>$num = 5;<br>  $num === 5; =&gt;True</code>  </li>
+             <li>L'opérateur non identique <strong>(!==)</strong>  renvoie VRAI si les deux opérateurs sont différents et FAUX s'ils sont identiques : <br>
+            <code>10 !== 10; // Evaluates to: FALSE</code> <br>
+            <code>5 !== 10; // Evaluates to: TRUE</code>
+            </li>
+            <li>Il y a aussi l'opérateur <strong>==</strong> mais qui est moins strict que l'opérateur <strong>===</strong>.
+            </li>
+            <li>Il existe aussi une condition <strong>else if</strong> pour mettre plusieurs conditions, la sytaxe est  <code>elseif</code>. Attentin que l'ordre de nos conditionnels est important car l'ordinateur exécutera la première condition TRUE.</li>
+            <li>Il existe aussi un <strong>switch</strong> pour comparer plusieurs expressions: 
+            </li>
+            <div class="text-center mt-3">
+              <img src="images/switch.jpg" alt="" style="width: 400px;">
+            </div>
+            <li class="mt-3">Un opérateur ternaire (? :) est un autre opérateur conditionnel. Il prend trois opérandes et renvoie une valeur.
+              <ol>
+                <li>Le premier opérande est une condition à vérifier. Elle est suivie d'un point d'interrogation ?</li>
+                <li>Le deuxième opérande est une expression à retourner si la condition est VRAIE. Elle est suivie de deux points ( :).</li>
+                <li>Le troisième opérande est une expression à retourner si la condition est FALSE.
+                </li>
+              </ol>
+              <p>Exemple: <br> <code>$isClicked = FALSE; <br> $link_color = $isClicked ? "purple" : "blue";</code> </p>
+            </li>
+            <li>Les expressions suivantes sont considérées comme falsy: 
+              <ol>
+                <li>Les chaînes de carctères vides</li>
+                <li>null</li>
+                <li>un variable indéfinie ou non déclarée</li>
+                <li>un tableau vide</li>
+                <li>le nombre 0</li>
+                <li>la chaîne de carctère 0</li>
+              </ol>
+            </li>
+            <li>La fonction intégrée <strong>readline()</strong>  prend une chaîne de caractères pour inviter l'utilisateur. Elle attend que l'utilisateur saisisse du texte dans le terminal et renvoie cette valeur sous forme de chaîne.</li>
+          </ul>
+        </section>
       </div>
     </main>
   </body>
