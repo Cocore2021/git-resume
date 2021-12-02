@@ -6,3 +6,9 @@ strong{
     color: #384cff;
 }
 
+#loops-in-html img {
+    display: block;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
