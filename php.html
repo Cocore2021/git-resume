@@ -428,36 +428,123 @@
           </h2>
           <ul>
             <li>Syntaxe: <code>$my_arr = array(0,1,2);</code></li>
-            <li>Autre syntaxe plus courte: <code>$number_array = [0, 1, 2, 3];</code></li>
-            <li>Pour imprimer le contenu d'un tableau nous pouvont utiliser la fonction intégrée print_r(): <code>print_r($number_array);</code></li>
-            <li>Si nous voulons simplement imprimer les éléments du tableau listés, nous pouvons convertir le tableau en une chaîne de caractères en utilisant la fonction intégrée implode(). La fonction implode() prend deux arguments : une chaîne de caractères à utiliser entre chaque élément (le $glue), et le tableau à joindre (le $pieces) : <code>echo implode(", ", $number_array);</code></li>
-            <li>On peut accéder aux éléments individuels d'un tableau en utilisant le nom de la variable du tableau et l'indice d'emplacement entouré de crochets ([]), par exemple : <code>echo $my_array[1];</code></li>
-            <li>Nous ajoutons des éléments à la fin d'un tableau en prenant le nom de la variable et en ajoutant des crochets ([]), l'opérateur d'affectation (=) et l'élément que nous voulons ajouter : <code>$string_array[] = "new element";</code></li>
-            <li>La fonction array_pop() prend un tableau comme argument. Elle supprime le dernier élément d'un tableau et renvoie l'élément supprimé.</li>
-            <li>La fonction array_push() prend un tableau comme premier argument. Les arguments qui suivent sont des éléments à ajouter à la fin du tableau. array_push() ajoute chacun des éléments au tableau et renvoie le nouveau nombre d'éléments dans le tableau.</li>
-            <li>La fonction array_shift() supprime le premier élément d'un tableau et renvoie cette valeur. Chacun des éléments du tableau sera décalé d'un indice vers le bas. Par exemple, l'élément qui se trouvait précédemment à l'indice 3 sera maintenant situé à l'indice 2. <br> 
-              Tout comme array_pop(), array_shift() réduit la longueur du tableau, et l'élément supprimé disparaît définitivement.</li>
-            <li>La fonction array_unshift() prend un tableau comme premier argument. Les arguments qui suivent sont des éléments à ajouter au début du tableau. Elle retourne le nouveau nombre d'éléments dans le tableau.</li>
-            
+            <li>
+              Autre syntaxe plus courte:
+              <code>$number_array = [0, 1, 2, 3];</code>
+            </li>
+            <li>
+              Pour imprimer le contenu d'un tableau nous pouvont utiliser la
+              fonction intégrée print_r(): <code>print_r($number_array);</code>
+            </li>
+            <li>
+              Si nous voulons simplement imprimer les éléments du tableau
+              listés, nous pouvons convertir le tableau en une chaîne de
+              caractères en utilisant la fonction intégrée implode(). La
+              fonction implode() prend deux arguments : une chaîne de caractères
+              à utiliser entre chaque élément (le $glue), et le tableau à
+              joindre (le $pieces) :
+              <code>echo implode(", ", $number_array);</code>
+            </li>
+            <li>
+              On peut accéder aux éléments individuels d'un tableau en utilisant
+              le nom de la variable du tableau et l'indice d'emplacement entouré
+              de crochets ([]), par exemple : <code>echo $my_array[1];</code>
+            </li>
+            <li>
+              Nous ajoutons des éléments à la fin d'un tableau en prenant le nom
+              de la variable et en ajoutant des crochets ([]), l'opérateur
+              d'affectation (=) et l'élément que nous voulons ajouter :
+              <code>$string_array[] = "new element";</code>
+            </li>
+            <li>
+              La fonction array_pop() prend un tableau comme argument. Elle
+              supprime le dernier élément d'un tableau et renvoie l'élément
+              supprimé.
+            </li>
+            <li>
+              La fonction array_push() prend un tableau comme premier argument.
+              Les arguments qui suivent sont des éléments à ajouter à la fin du
+              tableau. array_push() ajoute chacun des éléments au tableau et
+              renvoie le nouveau nombre d'éléments dans le tableau.
+            </li>
+            <li>
+              La fonction array_shift() supprime le premier élément d'un tableau
+              et renvoie cette valeur. Chacun des éléments du tableau sera
+              décalé d'un indice vers le bas. Par exemple, l'élément qui se
+              trouvait précédemment à l'indice 3 sera maintenant situé à
+              l'indice 2. <br />
+              Tout comme array_pop(), array_shift() réduit la longueur du
+              tableau, et l'élément supprimé disparaît définitivement.
+            </li>
+            <li>
+              La fonction array_unshift() prend un tableau comme premier
+              argument. Les arguments qui suivent sont des éléments à ajouter au
+              début du tableau. Elle retourne le nouveau nombre d'éléments dans
+              le tableau.
+            </li>
           </ul>
         </section>
         <section id="associative-array">
           <h2 class="text-center text-success p-3 text-underline">
             <u>Les Tableaux associatifs</u>
           </h2>
-          <p><dfn>Les tableaux associatifs </dfn> sont des collections de paires clé=	&gt;valeur. La clé d'un tableau associatif doit être soit une chaîne de caractères, soit un nombre entier. Les valeurs contenues peuvent être de n'importe quel type. Nous utilisons l'opérateur =&gt; pour associer une clé à sa valeur. Ex: <code>$my_array = ["panda" =&gt; "very cute", "lizard" =&gt; "cute", "cockroach" =&gt; "not very cute"];</code></p>
+          <p>
+            <dfn>Les tableaux associatifs </dfn> sont des collections de paires
+            clé= &gt;valeur. La clé d'un tableau associatif doit être soit une
+            chaîne de caractères, soit un nombre entier. Les valeurs contenues
+            peuvent être de n'importe quel type. Nous utilisons l'opérateur
+            =&gt; pour associer une clé à sa valeur. Ex:
+            <code
+              >$my_array = ["panda" =&gt; "very cute", "lizard" =&gt; "cute",
+              "cockroach" =&gt; "not very cute"];</code
+            >
+          </p>
           <ul>
-            <li>Pour imprimer le contenu du tableau associatif nous pouvons utiliser la méthode<strong>print_r()</strong>. Ex: <code>print_r($grades);</code></li>
-            <li>La méthode <strong>implode()</strong> n'imprime que la valeur et pas la clé.</li>
-            <li>Nous accédons à la valeur à des points clés donnés à l'aide de crochets ([]) : <code>echo $my_array["panda"]; </code></li>
-            <li>Pour ajouter de nouveaux éléments à un tableau associatif, nous utilisons l'opérateur d'affectation (=) : <strong>$my_array["capybara"] = "cutest";</strong></li>
-            <li>Nous pouvons supprimer entièrement une paire clé =&gt; valeur en utilisant la fonction PHP <strong>unset()</strong> Ex <code>unset($nums["one"]);</code> . <em>Note : si la clé utilisée n'existe pas dans le tableau, alors rien ne se passe.</em> </li>
-            <li>L'opérateur union <strong>(+) </strong> prend deux tableaux et retourne un nouveau tableau avec toutes les clés uniques du second tableau ajoutées au premier.</li>
-            <li>Il existe deux façons d'assigner une variable à une autre :
+            <li>
+              Pour imprimer le contenu du tableau associatif nous pouvons
+              utiliser la méthode<strong>print_r()</strong>. Ex:
+              <code>print_r($grades);</code>
+            </li>
+            <li>
+              La méthode <strong>implode()</strong> n'imprime que la valeur et
+              pas la clé.
+            </li>
+            <li>
+              Nous accédons à la valeur à des points clés donnés à l'aide de
+              crochets ([]) : <code>echo $my_array["panda"]; </code>
+            </li>
+            <li>
+              Pour ajouter de nouveaux éléments à un tableau associatif, nous
+              utilisons l'opérateur d'affectation (=) :
+              <strong>$my_array["capybara"] = "cutest";</strong>
+            </li>
+            <li>
+              Nous pouvons supprimer entièrement une paire clé =&gt; valeur en
+              utilisant la fonction PHP <strong>unset()</strong> Ex
+              <code>unset($nums["one"]);</code> .
+              <em
+                >Note : si la clé utilisée n'existe pas dans le tableau, alors
+                rien ne se passe.</em
+              >
+            </li>
+            <li>
+              L'opérateur union <strong>(+) </strong> prend deux tableaux et
+              retourne un nouveau tableau avec toutes les clés uniques du second
+              tableau ajoutées au premier.
+            </li>
+            <li>
+              Il existe deux façons d'assigner une variable à une autre :
               <ol>
-                <li>Par valeur - ceci crée deux variables qui contiennent des copies de la même valeur mais restent des entités indépendantes.
+                <li>
+                  Par valeur - ceci crée deux variables qui contiennent des
+                  copies de la même valeur mais restent des entités
+                  indépendantes.
                 </li>
-                <li>Par référence - cela crée deux noms de variables (alias) qui pointent vers le même espace en mémoire. Ils ne peuvent pas être modifiés séparément ! Ex: <code>$alias =& $favorites;</code>
+                <li>
+                  Par référence - cela crée deux noms de variables (alias) qui
+                  pointent vers le même espace en mémoire. Ils ne peuvent pas
+                  être modifiés séparément ! Ex:
+                  <code>$alias =& $favorites;</code>
                 </li>
               </ol>
             </li>
@@ -467,69 +554,169 @@
           <h2 class="text-center text-success p-3 text-underline">
             <u>PHP et HTML</u>
           </h2>
-          <p>PHP est un langage de programmation puissant utilisé pour d'autres applications que la création de modèles HTML, mais l'utilisation de PHP combinée à HTML reste une partie importante des compétences de nombreux développeurs web.</p>
-          <p>Nous pouvons intégrer des scripts PHP dans des documents HTML avec la balise d'ouverture <strong>&lt;?php</strong>  et la balise de fermeture <strong>?&gt;</strong> . Le processeur PHP lira l'ensemble du fichier, évaluera tout le PHP, le traduira en HTML et le transmettra au serveur Web pour qu'il soit envoyé au client.</p>
+          <p>
+            PHP est un langage de programmation puissant utilisé pour d'autres
+            applications que la création de modèles HTML, mais l'utilisation de
+            PHP combinée à HTML reste une partie importante des compétences de
+            nombreux développeurs web.
+          </p>
+          <p>
+            Nous pouvons intégrer des scripts PHP dans des documents HTML avec
+            la balise d'ouverture <strong>&lt;?php</strong> et la balise de
+            fermeture <strong>?&gt;</strong> . Le processeur PHP lira l'ensemble
+            du fichier, évaluera tout le PHP, le traduira en HTML et le
+            transmettra au serveur Web pour qu'il soit envoyé au client.
+          </p>
 
-          <p>Lorsque nous utilisons echo dans le HTML, nous n'imprimons plus dans le terminal, mais dans le document HTML. Ex: <code>echo "<p>My favorite color is {$data['color']}.</p>";</code></p>
+          <p>
+            Lorsque nous utilisons echo dans le HTML, nous n'imprimons plus dans
+            le terminal, mais dans le document HTML. Ex:
+            <code
+              >echo "
+              <p>My favorite color is {$data['color']}.</p>
+              ";</code
+            >
+          </p>
           <ul>
-            <li><strong>&lt;?=</strong>  est un raccourci pour &lt;?php echo.</li>
-            <li>Les superglobals sont des variables globales automatiques qui sont disponibles dans tous les scopes d'un script.</li>
+            <li>
+              <strong>&lt;?=</strong> est un raccourci pour &lt;?php echo.
+            </li>
+            <li>
+              Les superglobals sont des variables globales automatiques qui sont
+              disponibles dans tous les scopes d'un script.
+            </li>
           </ul>
           <h3>Les principales superglobales</h3>
           <ol>
             <li>$GLOBALS</li>
             <li>$_SERVER</li>
-            <li>$_GET =&gt; contient un tableau associatif de variables passées au script actuel à l'aide de paramètres de requête dans l'URL.</li>
-            <li>$_POST =&gt; contient un tableau associatif de variables passées au script courant à l'aide d'un formulaire soumis par la méthode "POST".</li>
+            <li>
+              $_GET =&gt; contient un tableau associatif de variables passées au
+              script actuel à l'aide de paramètres de requête dans l'URL.
+            </li>
+            <li>
+              $_POST =&gt; contient un tableau associatif de variables passées
+              au script courant à l'aide d'un formulaire soumis par la méthode
+              "POST".
+            </li>
             <li>$_FILES</li>
             <li>$_COOKIE</li>
             <li>$_SESSION</li>
-            <li>$_REQUEST =&gt; ceci contient le contenu de $_GET, $_POST, et $_COOKIE</li>
+            <li>
+              $_REQUEST =&gt; ceci contient le contenu de $_GET, $_POST, et
+              $_COOKIE
+            </li>
             <li>$_ENV</li>
           </ol>
           <h3>La méthode GET</h3>
-          <p>En HTML, le fait de donner la valeur "get" à l'attribut method d'un formulaire indique que vous souhaitez que le formulaire soit soumis à l'aide de la méthode GET. Lorsque cette méthode est utilisée, les entrées du formulaire sont transmises en tant que paramètres dans une chaîne d'interrogation URL.</p>
-          <p>Pour récolter les infos d'un formulaire il faut ajouter l'attribut "name" au formulaire. Ex: <code>&lt;input type="text" name="country"&gt;</code> L'info est traitée sous forme de tableau.</p>
+          <p>
+            En HTML, le fait de donner la valeur "get" à l'attribut method d'un
+            formulaire indique que vous souhaitez que le formulaire soit soumis
+            à l'aide de la méthode GET. Lorsque cette méthode est utilisée, les
+            entrées du formulaire sont transmises en tant que paramètres dans
+            une chaîne d'interrogation URL.
+          </p>
+          <p>
+            Pour récolter les infos d'un formulaire il faut ajouter l'attribut
+            "name" au formulaire. Ex:
+            <code>&lt;input type="text" name="country"&gt;</code> L'info est
+            traitée sous forme de tableau.
+          </p>
           <h3>La méthode POST</h3>
-          <p>En HTML, le fait de définir l'attribut method d'un formulaire sur "post" indique que vous souhaitez que le formulaire soit soumis à l'aide de la méthode POST. Lorsque vous utilisez la méthode POST pour soumettre des formulaires, vous ne verrez pas l'URL changer. Les données du formulaire sont envoyées en utilisant les en-têtes de la requête HTTP au lieu des paramètres de l'URL.</p>
-          <p>Lorsque le formulaire est soumis, les données d'entrée sont disponibles dans la superglobale $_POST. Comme pour GET, elles sont également disponibles dans $_REQUEST.</p>
+          <p>
+            En HTML, le fait de définir l'attribut method d'un formulaire sur
+            "post" indique que vous souhaitez que le formulaire soit soumis à
+            l'aide de la méthode POST. Lorsque vous utilisez la méthode POST
+            pour soumettre des formulaires, vous ne verrez pas l'URL changer.
+            Les données du formulaire sont envoyées en utilisant les en-têtes de
+            la requête HTTP au lieu des paramètres de l'URL.
+          </p>
+          <p>
+            Lorsque le formulaire est soumis, les données d'entrée sont
+            disponibles dans la superglobale $_POST. Comme pour GET, elles sont
+            également disponibles dans $_REQUEST.
+          </p>
           <h3>L'attribut action</h3>
-          <p>L'attribut action indique où envoyer les données du formulaire lorsqu'un formulaire est soumis.</p>
-
-
-
+          <p>
+            L'attribut action indique où envoyer les données du formulaire
+            lorsqu'un formulaire est soumis.
+          </p>
         </section>
         <section>
           <h2 class="text-center text-success p-3 text-underline">
             <u>Les Booleans et les opérateurs de comparaison</u>
           </h2>
           <ul>
-            <li>La déclaration if: <code>if(condition) {code à éxecuter};</code>. </li>
-            <li>La condition, ou l'expression, d'une instruction if peut contenir une valeur booléenne (VRAI ou FAUX), une variable affectée à l'une de ces valeurs ou une expression qui donne la valeur VRAI ou FAUX. Ex: <code>1 &lt; 10; // Evaluates to: TRUE</code> </li>
-            <li>L'opérateur identique <strong>(===) </strong> renvoie VRAI si l'opérande de gauche est identique à l'opérande de droite et FAUX si ce n'est pas le cas. <br> Ex : 
-             <code>$num = 5;<br>  $num === 5; =&gt;True</code>  </li>
-             <li>L'opérateur non identique <strong>(!==)</strong>  renvoie VRAI si les deux opérateurs sont différents et FAUX s'ils sont identiques : <br>
-            <code>10 !== 10; // Evaluates to: FALSE</code> <br>
-            <code>5 !== 10; // Evaluates to: TRUE</code>
+            <li>
+              La déclaration if: <code>if(condition) {code à éxecuter};</code>.
             </li>
-            <li>Il y a aussi l'opérateur <strong>==</strong> mais qui est moins strict que l'opérateur <strong>===</strong>.
+            <li>
+              La condition, ou l'expression, d'une instruction if peut contenir
+              une valeur booléenne (VRAI ou FAUX), une variable affectée à l'une
+              de ces valeurs ou une expression qui donne la valeur VRAI ou FAUX.
+              Ex: <code>1 &lt; 10; // Evaluates to: TRUE</code>
             </li>
-            <li>Il existe aussi une condition <strong>else if</strong> pour mettre plusieurs conditions, la sytaxe est  <code>elseif</code>. Attentin que l'ordre de nos conditionnels est important car l'ordinateur exécutera la première condition TRUE.</li>
-            <li>Il existe aussi un <strong>switch</strong> pour comparer plusieurs expressions: 
+            <li>
+              L'opérateur identique <strong>(===) </strong> renvoie VRAI si
+              l'opérande de gauche est identique à l'opérande de droite et FAUX
+              si ce n'est pas le cas. <br />
+              Ex :
+              <code
+                >$num = 5;<br />
+                $num === 5; =&gt;True</code
+              >
+            </li>
+            <li>
+              L'opérateur non identique <strong>(!==)</strong> renvoie VRAI si
+              les deux opérateurs sont différents et FAUX s'ils sont identiques
+              : <br />
+              <code>10 !== 10; // Evaluates to: FALSE</code> <br />
+              <code>5 !== 10; // Evaluates to: TRUE</code>
+            </li>
+            <li>
+              Il y a aussi l'opérateur <strong>==</strong> mais qui est moins
+              strict que l'opérateur <strong>===</strong>.
+            </li>
+            <li>
+              Il existe aussi une condition <strong>else if</strong> pour mettre
+              plusieurs conditions, la sytaxe est <code>elseif</code>. Attentin
+              que l'ordre de nos conditionnels est important car l'ordinateur
+              exécutera la première condition TRUE.
+            </li>
+            <li>
+              Il existe aussi un <strong>switch</strong> pour comparer plusieurs
+              expressions:
             </li>
             <div class="text-center mt-3">
-              <img src="images/switch.jpg" alt="" style="width: 400px;">
+              <img src="images/switch.jpg" alt="" style="width: 400px" />
             </div>
-            <li class="mt-3">Un opérateur ternaire (? :) est un autre opérateur conditionnel. Il prend trois opérandes et renvoie une valeur.
+            <li class="mt-3">
+              Un opérateur ternaire (? :) est un autre opérateur conditionnel.
+              Il prend trois opérandes et renvoie une valeur.
               <ol>
-                <li>Le premier opérande est une condition à vérifier. Elle est suivie d'un point d'interrogation ?</li>
-                <li>Le deuxième opérande est une expression à retourner si la condition est VRAIE. Elle est suivie de deux points ( :).</li>
-                <li>Le troisième opérande est une expression à retourner si la condition est FALSE.
+                <li>
+                  Le premier opérande est une condition à vérifier. Elle est
+                  suivie d'un point d'interrogation ?
+                </li>
+                <li>
+                  Le deuxième opérande est une expression à retourner si la
+                  condition est VRAIE. Elle est suivie de deux points ( :).
+                </li>
+                <li>
+                  Le troisième opérande est une expression à retourner si la
+                  condition est FALSE.
                 </li>
               </ol>
-              <p>Exemple: <br> <code>$isClicked = FALSE; <br> $link_color = $isClicked ? "purple" : "blue";</code> </p>
+              <p>
+                Exemple: <br />
+                <code
+                  >$isClicked = FALSE; <br />
+                  $link_color = $isClicked ? "purple" : "blue";</code
+                >
+              </p>
             </li>
-            <li>Les expressions suivantes sont considérées comme falsy: 
+            <li>
+              Les expressions suivantes sont considérées comme falsy:
               <ol>
                 <li>Les chaînes de carctères vides</li>
                 <li>null</li>
@@ -539,7 +726,12 @@
                 <li>la chaîne de carctère 0</li>
               </ol>
             </li>
-            <li>La fonction intégrée <strong>readline()</strong>  prend une chaîne de caractères pour inviter l'utilisateur. Elle attend que l'utilisateur saisisse du texte dans le terminal et renvoie cette valeur sous forme de chaîne.</li>
+            <li>
+              La fonction intégrée <strong>readline()</strong> prend une chaîne
+              de caractères pour inviter l'utilisateur. Elle attend que
+              l'utilisateur saisisse du texte dans le terminal et renvoie cette
+              valeur sous forme de chaîne.
+            </li>
           </ul>
         </section>
         <section id="logical-operators">
@@ -548,14 +740,41 @@
           </h2>
           <ul>
             <li>
-              En imbriquant les conditionnels les uns dans les autres, nous pouvons créer des décisions de branchement.
+              En imbriquant les conditionnels les uns dans les autres, nous
+              pouvons créer des décisions de branchement.
             </li>
-            <li>L'opérateur logique <strong>||</strong>  prend deux valeurs ou expressions booléennes différentes comme opérandes et renvoie une seule valeur booléenne. Il renvoie VRAI si son opérande gauche ou son opérande droit vaut VRAI.</li>
-            <li>L'opérateur logique <strong>&&</strong>  renvoie VRAI uniquement si les deux opérandes sont évalués à VRAI. Il renvoie FALSE si l'un ou l'autre de ses opérandes, ou les deux, valent FALSE.</li>
-            <li>L'opérateur logique not <strong> !</strong> ne prend qu'un opérande droit. Il inverse la valeur booléenne de son opérande.</li>
-            <li>L'opérateur logique exclusif ou <strong>(xor)</strong>  renvoie VRAI uniquement si son opérande gauche ou son opérande droit évalue VRAI, mais pas les deux ou aucun.</li>
-            <li>PHP propose une syntaxe alternative pour les opérateurs || et && : on peut utiliser <strong>or</strong> à la place de ||, et on peut utiliser <strong>and</strong> à la place de &&. Ces opérateurs fonctionnent de la même manière mais ont une précédence différente.</li>
-            <li>Nous pouvons inclure le code d'un fichier dans un autre avec <strong>include</strong> , ce qui nous permet d'écrire des programmes modulaires en mode.</li>
+            <li>
+              L'opérateur logique <strong>||</strong> prend deux valeurs ou
+              expressions booléennes différentes comme opérandes et renvoie une
+              seule valeur booléenne. Il renvoie VRAI si son opérande gauche ou
+              son opérande droit vaut VRAI.
+            </li>
+            <li>
+              L'opérateur logique <strong>&&</strong> renvoie VRAI uniquement si
+              les deux opérandes sont évalués à VRAI. Il renvoie FALSE si l'un
+              ou l'autre de ses opérandes, ou les deux, valent FALSE.
+            </li>
+            <li>
+              L'opérateur logique not <strong> !</strong> ne prend qu'un
+              opérande droit. Il inverse la valeur booléenne de son opérande.
+            </li>
+            <li>
+              L'opérateur logique exclusif ou <strong>(xor)</strong> renvoie
+              VRAI uniquement si son opérande gauche ou son opérande droit
+              évalue VRAI, mais pas les deux ou aucun.
+            </li>
+            <li>
+              PHP propose une syntaxe alternative pour les opérateurs || et && :
+              on peut utiliser <strong>or</strong> à la place de ||, et on peut
+              utiliser <strong>and</strong> à la place de &&. Ces opérateurs
+              fonctionnent de la même manière mais ont une précédence
+              différente.
+            </li>
+            <li>
+              Nous pouvons inclure le code d'un fichier dans un autre avec
+              <strong>include</strong> , ce qui nous permet d'écrire des
+              programmes modulaires en mode.
+            </li>
           </ul>
         </section>
         <section id="loops">
@@ -564,18 +783,47 @@
           </h2>
           <ul>
             <li>
-              Les boucles <strong>while </strong> ne s'exécutent que tant que leur condition est évalué comme VRAI.</li>
-              <li>Les boucles <strong>do...while </strong> s'exécutent toujours au moins une fois et continuent à s'exécuter tant que leur condition est VRAI.</li>
-              <li>Les boucles <strong>for</strong> contiennent 3 expressions et sont fréquemment utilisées pour exécuter un bloc de code un nombre spécifique de fois.
-                <ol>
-                  <li>La première expression est exécutée avant la première itération.</li>
-                  <li>La deuxième expression est évaluée avant chaque itération. Si elle est VRAIE, le bloc de code est exécuté. Sinon, la boucle se termine.</li>
-                  <li>La troisième expression est évaluée après chaque itération.</li>
-                </ol>
-              </li>
-              <li>Les boucles <strong>foreach</strong>  sont utilisées pour itérer sur les éléments d'un tableau. La clé et la valeur de chaque élément sont disponibles dans le bloc de code.</li>
-              <li><strong>break</strong>  est utilisé pour terminer l'exécution d'une boucle prématurément.</li>
-              <li> <strong>continue </strong> est utilisé pour terminer prématurément l'exécution d'une itération de boucle et passer à l'itération suivante.</li>
+              Les boucles <strong>while </strong> ne s'exécutent que tant que
+              leur condition est évalué comme VRAI.
+            </li>
+            <li>
+              Les boucles <strong>do...while </strong> s'exécutent toujours au
+              moins une fois et continuent à s'exécuter tant que leur condition
+              est VRAI.
+            </li>
+            <li>
+              Les boucles <strong>for</strong> contiennent 3 expressions et sont
+              fréquemment utilisées pour exécuter un bloc de code un nombre
+              spécifique de fois.
+              <ol>
+                <li>
+                  La première expression est exécutée avant la première
+                  itération.
+                </li>
+                <li>
+                  La deuxième expression est évaluée avant chaque itération. Si
+                  elle est VRAIE, le bloc de code est exécuté. Sinon, la boucle
+                  se termine.
+                </li>
+                <li>
+                  La troisième expression est évaluée après chaque itération.
+                </li>
+              </ol>
+            </li>
+            <li>
+              Les boucles <strong>foreach</strong> sont utilisées pour itérer
+              sur les éléments d'un tableau. La clé et la valeur de chaque
+              élément sont disponibles dans le bloc de code.
+            </li>
+            <li>
+              <strong>break</strong> est utilisé pour terminer l'exécution d'une
+              boucle prématurément.
+            </li>
+            <li>
+              <strong>continue </strong> est utilisé pour terminer prématurément
+              l'exécution d'une itération de boucle et passer à l'itération
+              suivante.
+            </li>
           </ul>
         </section>
         <section id="loops-in-html">
@@ -583,24 +831,68 @@
             <u>Les loops en HTML</u>
           </h2>
           <ul>
-            <li>Le raccourci PHP pour les boucles utilise un deux-points <strong>( : )</strong>  au lieu d'une parenthèse ({) pour ouvrir le bloc de code.</li>
             <li>
-              Ce raccourci utilise des mots-clés pour fermer le bloc de code au lieu d'une parenthèse (}) :
+              Le raccourci PHP pour les boucles utilise un deux-points
+              <strong>( : )</strong> au lieu d'une parenthèse ({) pour ouvrir le
+              bloc de code.
+            </li>
+            <li>
+              Ce raccourci utilise des mots-clés pour fermer le bloc de code au
+              lieu d'une parenthèse (}) :
               <ol>
-                <li>Utilisez <strong>endfor</strong>  pour fermer une boucle for. <img src="Images/php-for.jpg" alt=""></li>
-
-                <li>Utiliser <strong>endforeach</strong>  pour fermer une boucle foreach. 
-                <img src="Images/php-foreach.jpg" alt="">
+                <li>
+                  Utilisez <strong>endfor</strong> pour fermer une boucle for.
+                  <img src="Images/php-for.jpg" alt="" />
                 </li>
 
-                <li>Utilisez <strong>endwhile</strong> 
+                <li>
+                  Utiliser <strong>endforeach</strong> pour fermer une boucle
+                  foreach.
+                  <img src="Images/php-foreach.jpg" alt="" />
+                </li>
+
+                <li>
+                  Utilisez <strong>endwhile</strong>
                   pour fermer une boucle while.
-                <img src="Images/php-endwhile.jpg" alt="">
+                  <img src="Images/php-endwhile.jpg" alt="" />
                 </li>
               </ol>
             </li>
-            <li>Le mot clé de fermeture doit être suivi d'un point-virgule <strong>( ; )</strong> .</li>
-            <li>Assurez-vous de rentrer en mode PHP en utilisant <code> &lt;?php</code> ou le raccourci echo <code>&lt;?=</code>  avant d'utiliser les variables PHP dans la boucle.</li>
+            <li>
+              Le mot clé de fermeture doit être suivi d'un point-virgule
+              <strong>( ; )</strong> .
+            </li>
+            <li>
+              Assurez-vous de rentrer en mode PHP en utilisant
+              <code> &lt;?php</code> ou le raccourci echo
+              <code>&lt;?=</code> avant d'utiliser les variables PHP dans la
+              boucle.
+            </li>
+          </ul>
+        </section>
+        <section id="regex">
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Les expressions régulières</u>
+          </h2>
+          <ul>
+            <li>Les expressions régulières sont des séquences spéciales de caractères qui décrivent un modèle de texte à faire correspondre.</li>
+            <li>Nous pouvons utiliser des littéraux pour faire correspondre les caractères exacts que nous désirons.</li>
+            <li>L'alternance, en utilisant le symbole du tuyau <strong>| </strong> , nous permet de faire correspondre le texte qui précède ou qui suit le | .</li>
+            <li>Les jeux de caractères, désignés par une paire de crochets <strong>[]</strong> , nous permettent de faire correspondre un caractère à une série de caractères.</li>
+            <li>Les caractères génériques, représentés par le point ou le point <strong>.</strong> , correspondent à tout caractère unique (lettre, chiffre, symbole ou espace).</li>
+            <li>Les plages nous permettent de spécifier une plage de caractères dans laquelle nous pouvons effectuer une correspondance. Exemple : <code>
+              abc = [a-c].
+              </code></li>
+            <li><strong>\w</strong> = n'importe quel caractère utilisable dans un mot (w est utilisé pour word). </li>
+            <li><strong>\d</strong> = <strong>[0-9]</strong> n'importe quel chiffe.</li>
+            <li><strong>\s</strong> = n'importe quel caractère blanc (espace, tabulation, retour-chariot, etc...).</li>
+            <li><strong></strong></li>
+            <li>Les regroupements, indiqués par des parenthèses (), regroupent des parties d'une expression régulière et permettent de limiter l'alternance à une partie de l'expression régulière.</li>
+            <li>Les quantificateurs fixes, représentés par des accolades {}, nous permettent d'indiquer la quantité exacte ou une plage de quantité d'un caractère que nous souhaitons faire correspondre.</li>
+            <li>Les quantificateurs optionnels, indiqués par le point d'interrogation ?, nous permettent d'indiquer qu'un caractère dans une regex est optionnel, ou peut apparaître 0 fois ou 1 fois.</li>
+            <li>L'étoile de Kleene, désignée par l'astérisque <strong> *</strong>, est un quantificateur qui correspond au caractère précédent 0 ou plusieurs fois.</li>
+            <li>Le plus de Kleene, désigné par le <strong>+</strong>, correspond au caractère précédent une ou plusieurs fois.</li>
+            <li>Les symboles d'ancrage <strong>^</strong> et le <strong>$</strong> sont utilisés pour faire correspondre le texte au début et à la fin d'une chaîne, respectivement.</li>
           </ul>
 
         </section>
