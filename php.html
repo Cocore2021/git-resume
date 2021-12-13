@@ -896,6 +896,57 @@
           </ul>
 
         </section>
+        <section id="form-validation">
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Valider un formulaire</u>
+          </h2>
+            <ul>
+              <li>L'exécution de validations de formulaires en arrière-plan sur les données soumises est une étape essentielle pour protéger notre site web et ses utilisateurs.</li>
+              <li>L'utilisation de l'attribut de méthode POST dans un formulaire HTML permet à notre script PHP d'accéder aux données soumises dans le tableau associatif superglobal : $_POST.</li>
+              <li>Nous modifions notre HTML et notre PHP de manière à ce que, lorsque la saisie est jugée non valide, un retour d'information significatif soit affiché à l'utilisateur.
+              </li>
+              <li>Si nous prévoyons d'afficher les entrées de l'utilisateur, nous devons d'abord les assainir. Nous pouvons utiliser des méthodes comme <strong>trim()</strong>  et <strong>htmlspecialchars()</strong>  pour une désinfection de base.</li>
+              <li>Nous pouvons utiliser <strong>filter_var()</strong>  avec un filtre pour nettoyer les types d'entrée courants.</li>
+              <li>Nous pouvons également utiliser <strong>filter_var()</strong>  avec un filtre pour effectuer des validations sur des types d'entrée courants.</li>
+              <li>Nous voudrons souvent effectuer des validations personnalisées.</li>
+              <li>La fonction <strong>preg_match() </strong> vérifie si une chaîne de caractères donnée correspond à une expression régulière.</li>
+              <li>Comme les comparaisons d'expressions régulières peuvent consommer beaucoup de puissance de calcul, nous voudrons vérifier la longueur des entrées avant d'effectuer des vérifications d'expressions régulières.</li>
+              <li>Il est courant d'effectuer des validations en comparant les données entrées par l'utilisateur à des données en back-end.</li>
+              <li>Avant de stocker les données de l'utilisateur dans notre back-end, nous les aseptisons pour des raisons de sécurité et de cohérence du formatage.</li>
+              <li>Si la soumission d'un formulaire par un utilisateur a été acceptée, nous pouvons le rediriger vers une autre page avec la fonction intégrée <strong>header()</strong>. Ex: <code>header("Location: success.html");</code></li>
+            </ul>
+         
+        </section>
+        <section>
+          <h2 class="text-center text-success p-3 text-underline">
+            <u>Les classes et les objects</u>
+          </h2>
+            <ul>
+              <li>Les classes sont définies à l'aide du mot-clé <strong>class</strong> .</li>
+              <img src="Images/class.jpg" alt="" class="image">
+              <li>Les fonctions définies dans une classe deviennent des méthodes et les variables de la classe sont considérées comme des propriétés.</li>
+              <img src="Images/function-classe.jpg" alt="" class="image">
+              <li>Une méthode constructeur est l'une des nombreuses méthodes magiques fournies par PHP. Cette méthode est automatiquement appelée lorsqu'un objet est instancié. Une méthode constructeur est définie avec le nom de méthode spécial __construct.</li>
+              <img src="Images/construcor.jpg" alt="" class="image">
+              <li>Il existe trois niveaux de visibilité pour les membres du groupe :
+                <ol>
+                  <li><strong>public </strong>
+                     (par défaut) - accessible depuis l'extérieur de la classe
+                  </li>
+                  <li><strong>protected</strong> - uniquement accessible au sein de la classe ou de ses descendants</li>
+                  <li><strong>private</strong> - uniquement accessible au sein de la classe de définition.</li>
+                </ol>
+
+              </li>
+              <li>Les membres peuvent être définis comme étant statiques. <strong> static</strong>. Les membres statiques sont accessibles en utilisant l'opérateur de résolution d'étendue <code>::</code>.
+              </li>∑
+              <img src="Images/static.jpg" alt="" class="image">
+              <li>Les classes sont instanciées en objets à l'aide du mot-clé <strong>new</strong>. </li>
+              <li>On accède aux membres d'un objet en utilisant l'opérateur d'objet <strong>-&gt;</strong>.</li>
+              <img src="Images/classes2.jpg" alt="" class="image">
+            </ul>
+        
+        </section>
       </div>
     </main>
   </body>

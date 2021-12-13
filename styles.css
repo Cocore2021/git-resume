@@ -12,3 +12,7 @@ strong{
     margin-top: 10px;
 }
 
+.image {
+    max-width: 400px;
+    margin: 10px 0;
+}
